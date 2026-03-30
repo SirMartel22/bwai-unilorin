@@ -1,22 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* ── Font utility classes (tied to CSS variables from layout.tsx) ─────────── */
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-heading: var(--font-heading), "Space Grotesk", sans-serif;
+  --font-body: var(--font-body), "Inter", sans-serif;
+
+  --color-brand-blue: #4285F4;
+  --color-brand-red: #EA4335;
+  --color-brand-yellow: #FBBC04;
+  --color-brand-green: #34A853;
+}
+
+/* ── Typography defaults ─────────── */
 @layer base {
-  .font-heading {
-    font-family: var(--font-heading), 'Space Grotesk', sans-serif;
-  }
-  .font-body {
-    font-family: var(--font-body), 'Inter', sans-serif;
-  }
-
-  /* Apply font-body as default body font */
   body {
     font-family: var(--font-body), 'Inter', sans-serif;
   }
 
-  /* Apply font-heading to all heading tags by default */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading), 'Space Grotesk', sans-serif;
   }
