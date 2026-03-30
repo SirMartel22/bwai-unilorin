@@ -1,50 +1,74 @@
 "use client";
-import { useTheme } from "../lib/ThemeContext";
+import { useEffect, useState } from "react";
 
-const themeConfig = {
-  light: { icon: "☀️", label: "Light", next: "Dark" },
-  dark:  { icon: "🌙", label: "Dark",  next: "Auto" },
-  auto:  { icon: "🌓", label: "Auto",  next: "Light" },
-};
+const NAV_LINKS = [
+  { label: "ABOUT", href: "#about" },
+  { label: "AGENDA", href: "#schedule" },
+  { label: "FAQ", href: "#faq" },
+];
 
-interface NavbarProps {
-  onAgendaClick: () => void;
-}
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
 
-export default function Navbar({ onAgendaClick }: NavbarProps) {
-  const { mode, cycle } = useTheme();
-  const cfg = themeConfig[mode];
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const el = document.getElementById(href.slice(1));
+      el?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between px-6 md:px-8 h-14 bg-gray-950 dark:bg-black shadow-[0_1px_0_rgba(255,255,255,0.06)] transition-colors duration-300">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 lg:px-20 h-[60px] transition-all duration-400 ${
+        scrolled
+          ? "bg-black/60 backdrop-blur-xl border-b border-white/10 shadow-[0_1px_0_rgba(255,255,255,0.05)]"
+          : "bg-transparent"
+      }`}
+    >
       {/* Logo */}
-      <div className="flex items-center gap-1.5">
-        <span className="font-heading text-sm font-extrabold bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#34A853] bg-clip-text text-transparent tracking-tight">
-          GDGOC
-        </span>
-        <span className="font-heading text-white font-semibold text-sm">Unilorin</span>
+      <a href="/" className="flex items-center gap-2 group shrink-0">
+        <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#4285F4] via-[#EA4335] to-[#34A853] flex items-center justify-center text-white text-[10px] font-bold leading-none">
+          G
+        </div>
+        <div className="flex flex-col leading-none">
+          <span className="text-white text-[11px] font-semibold tracking-tight leading-tight">
+            GDG on Campus
+          </span>
+          <span className="text-white/60 text-[10px] tracking-tight leading-tight">
+            Unilorin
+          </span>
+        </div>
+      </a>
+
+      {/* Nav Links — hidden on mobile */}
+      <div className="hidden md:flex items-center gap-8">
+        {NAV_LINKS.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            onClick={(e) => handleNav(e, link.href)}
+            className="text-white/70 hover:text-white text-[12px] font-medium tracking-[1.8px] uppercase transition-colors duration-200"
+          >
+            {link.label}
+          </a>
+        ))}
       </div>
 
-      {/* Actions */}
-      <div className="flex items-center gap-2.5">
-        {/* Theme toggle */}
-        <button
-          onClick={cycle}
-          className="flex items-center gap-1.5 text-gray-300 border border-gray-600 rounded-full px-3 py-1.5 text-xs font-medium hover:bg-white/10 transition-colors duration-200 cursor-pointer"
-          aria-label={`Switch to ${cfg.next} mode`}
-        >
-          <span>{cfg.icon}</span>
-          <span>{cfg.label}</span>
-        </button>
-
-        {/* Agenda */}
-        <button
-          onClick={onAgendaClick}
-          className="text-gray-200 border border-gray-600 rounded-full px-4 py-1.5 text-sm font-medium hover:bg-white/10 transition-colors duration-200 cursor-pointer"
-        >
-          Agenda
-        </button>
-      </div>
+      {/* Apply CTA */}
+      <a
+        href="#apply"
+        className="flex items-center gap-1.5 bg-[#7C3AED] hover:bg-[#6d28d9] text-white text-[13px] font-semibold px-5 py-2 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(124,58,237,0.5)] hover:-translate-y-0.5 shrink-0"
+      >
+        <span>→</span>
+        <span>Apply</span>
+      </a>
     </nav>
   );
 }
