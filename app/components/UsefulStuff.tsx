@@ -19,7 +19,7 @@ export default function UsefulStuff() {
   ];
 
   return (
-    <section id="useful-stuff" className="py-24 px-6 md:px-10 max-w-7xl mx-auto">
+    <section id="useful-stuff" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
       <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-12 tracking-tight">
         Useful Stuff
       </h2>

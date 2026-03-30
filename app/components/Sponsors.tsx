@@ -31,11 +31,11 @@ function CardBg() {
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="py-24 px-6 md:px-10 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5 relative z-10">
+    <section id="sponsors" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
         
         {/* Left Column */}
-        <div className="lg:col-span-4 flex flex-col items-start">
+        <div className="lg:col-span-4 flex flex-col items-start lg:sticky lg:top-24 self-start">
           <h3 className="font-heading text-[#7C3AED] text-xs font-bold tracking-[0.15em] uppercase mb-6">
             Our Supporters
           </h3>

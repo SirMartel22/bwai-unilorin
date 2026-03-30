@@ -17,7 +17,7 @@ export default function SpeakerCard({ speaker }: SpeakerCardProps) {
           sizes="96px"
         />
       </div>
-      <p className="font-heading font-bold text-[17px] text-gray-900 dark:text-gray-100 mb-1 transition-colors duration-300">
+      <p className="font-heading font-bold text-base text-gray-900 dark:text-gray-100 mb-1 transition-colors duration-300">
         {speaker.name}
       </p>
       <p className="text-[#4285F4] text-xs font-semibold mb-1.5">{speaker.role}</p>

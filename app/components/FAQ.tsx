@@ -26,7 +26,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 px-6 md:px-10 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5">
+    <section id="faq" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5">
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
         
         {/* Left Column */}
@@ -67,7 +67,7 @@ export default function FAQ() {
                   className="w-full flex items-center justify-between py-5 md:py-6 text-left focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-heading font-medium text-[17px] md:text-lg text-gray-900 dark:text-gray-100 group-hover:text-[#7C3AED] dark:group-hover:text-[#a78bfa] transition-colors pr-8">
+                  <span className="font-heading font-semibold text-base text-gray-900 dark:text-gray-100 group-hover:text-[#7C3AED] dark:group-hover:text-[#a78bfa] transition-colors pr-8">
                     {faq.question}
                   </span>
                   

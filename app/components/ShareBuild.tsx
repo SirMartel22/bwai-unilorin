@@ -53,7 +53,7 @@ export default function ShareBuild() {
   return (
     <section
       id="share"
-      className="bg-[#4285F4] py-16 px-6"
+      className="bg-[#4285F4] py-24 px-8 md:px-16 lg:px-20"
     >
       <div className="anim-share-card max-w-lg mx-auto bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-2xl transition-colors duration-300">
         {/* Header */}

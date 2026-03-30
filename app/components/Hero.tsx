@@ -107,7 +107,7 @@ export default function Hero() {
       {/* ── Main content ───────────────────────────────────────────────── */}
       <div
         ref={contentRef}
-        className="relative z-10 flex flex-col items-center justify-center flex-1 text-center px-6 pt-24 pb-28"
+        className="relative z-10 flex flex-col items-center justify-center flex-1 text-center px-8 md:px-16 lg:px-20 pt-24 pb-28"
       >
         {/* Giant title */}
         <h1
@@ -133,7 +133,7 @@ export default function Hero() {
         <p
           data-anim
           data-delay="400"
-          className="mt-6 text-white/80 text-lg md:text-xl font-medium tracking-wide"
+          className="mt-6 text-white/80 text-sm md:text-base font-medium tracking-wide"
         >
           Build with AI
         </p>
@@ -151,7 +151,7 @@ export default function Hero() {
       </div>
 
       {/* ── Bottom info bar ─────────────────────────────────────────────── */}
-      <div className="relative z-10 flex items-end justify-between px-6 md:px-10 pb-6 w-full">
+      <div className="relative z-10 flex items-end justify-between px-8 md:px-16 lg:px-20 pb-6 w-full">
         {/* Date + Location */}
         <div
           className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6"
