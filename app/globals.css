@@ -5,11 +5,13 @@
 @theme {
   --font-heading: var(--font-heading), "Space Grotesk", sans-serif;
   --font-body: var(--font-body), "Inter", sans-serif;
+  --font-mono: var(--font-mono), "Space Mono", monospace;
 
   --color-brand-blue: #4285F4;
   --color-brand-red: #EA4335;
   --color-brand-yellow: #FBBC04;
   --color-brand-green: #34A853;
+  --color-brand-purple: #7C3AED;
 }
 
 /* ── Typography defaults ─────────── */

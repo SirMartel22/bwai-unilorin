@@ -12,23 +12,6 @@ const useGsapAnimations = () => {
       gsap.registerPlugin(ScrollTrigger);
 
       const ctx = gsap.context(() => {
-        // Hero staggered entrance
-        gsap.from(".anim-hero-badge", {
-          opacity: 0, y: -16, duration: 0.55, ease: "power2.out", delay: 0.1,
-        });
-        gsap.from(".anim-hero-title", {
-          opacity: 0, y: 32, duration: 0.65, ease: "power3.out", delay: 0.22,
-        });
-        gsap.from(".anim-hero-sub", {
-          opacity: 0, y: 20, duration: 0.55, ease: "power2.out", delay: 0.38, stagger: 0.1,
-        });
-        gsap.from(".anim-hero-btns", {
-          opacity: 0, y: 16, duration: 0.5, ease: "power2.out", delay: 0.52,
-        });
-        gsap.from(".anim-hero-tags", {
-          opacity: 0, duration: 0.45, delay: 0.65,
-        });
-
         // Speakers heading
         gsap.from(".anim-speakers-heading", {
           scrollTrigger: { trigger: "#speakers", start: "top 85%" },
