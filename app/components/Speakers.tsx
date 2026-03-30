@@ -46,7 +46,6 @@ export default function Speakers() {
         perPage: 3,
         perMove: 1,
         gap: "1.25rem",
-        padding: { top: '10px', bottom: '20px', left: '0', right: '0' },
         autoplay: true,
         interval: 3200,
         pauseOnHover: true,
@@ -80,7 +79,7 @@ export default function Speakers() {
         <div className="splide__track">
           <ul className="splide__list">
             {speakers.map((speaker) => (
-              <li key={speaker.name} className="splide__slide">
+              <li key={speaker.name} className="splide__slide py-4">
                 <SpeakerCard speaker={speaker} />
               </li>
             ))}

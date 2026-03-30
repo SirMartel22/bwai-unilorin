@@ -55,7 +55,7 @@ export default function ShareBuild() {
       id="share"
       className="bg-[#4285F4] py-24 px-8 md:px-16 lg:px-20"
     >
-      <div className="anim-share-card max-w-lg mx-auto bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-2xl transition-colors duration-300">
+      <div className="anim-share-card max-w-lg mx-auto bg-white dark:bg-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] rounded-2xl p-8 transition-colors duration-300">
         {/* Header */}
         <div className="flex items-center gap-3 mb-3">
           <span className="text-2xl">📣</span>

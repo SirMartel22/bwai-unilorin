@@ -37,7 +37,7 @@ export default function Team() {
             {teamMembers.map((member, idx) => (
               <div 
                 key={idx} 
-                className="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 dark:bg-gray-800 isolate shadow-md cursor-pointer"
+                className="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-white dark:bg-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] isolate cursor-pointer"
               >
                 {/* Image */}
                 <Image

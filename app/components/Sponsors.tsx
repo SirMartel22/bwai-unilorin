@@ -79,7 +79,7 @@ export default function Sponsors() {
             {/* Platinum Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               {platinumSponsors.map((p) => (
-                <div key={p.name} className="relative h-40 rounded-2xl bg-gradient-to-br from-[#1a1c23] to-black border border-white/5 flex items-center justify-center overflow-hidden group shadow-lg">
+                <div key={p.name} className="relative h-40 rounded-2xl bg-gradient-to-br from-[#1a1c23] to-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] flex items-center justify-center overflow-hidden group">
                   <CardBg />
                   <div className="absolute top-3 right-3 bg-[#3b276b]/60 border border-[#7C3AED]/30 px-2 py-0.5 rounded text-[#a78bfa] text-[8px] font-bold tracking-widest uppercase z-10 backdrop-blur-sm">
                     Platinum
@@ -91,7 +91,7 @@ export default function Sponsors() {
               ))}
               
               {/* Google - Wide Platinum Card */}
-              <div className="sm:col-span-2 relative h-40 rounded-2xl bg-gradient-to-br from-[#1a1c23] to-black border border-white/5 flex items-center justify-center overflow-hidden group shadow-lg">
+              <div className="sm:col-span-2 relative h-40 rounded-2xl bg-gradient-to-br from-[#1a1c23] to-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] flex items-center justify-center overflow-hidden group">
                 <CardBg />
                 <div className="absolute top-3 right-3 bg-[#3b276b]/60 border border-[#7C3AED]/30 px-2 py-0.5 rounded text-[#a78bfa] text-[8px] font-bold tracking-widest uppercase z-10 backdrop-blur-sm">
                   Platinum
@@ -105,7 +105,7 @@ export default function Sponsors() {
             {/* Silver Cards */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {silverSponsors.map((s) => (
-                <div key={s.name} className="relative h-20 rounded-xl bg-gradient-to-br from-[#13151a] to-black border border-white/5 flex items-center justify-center overflow-hidden group shadow-md">
+                <div key={s.name} className="relative h-20 rounded-xl bg-gradient-to-br from-[#13151a] to-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] flex items-center justify-center overflow-hidden group">
                   <CardBg />
                   <div className="absolute top-2 right-2 bg-gray-800/80 border border-gray-600/50 px-1.5 py-0.5 rounded text-gray-300 text-[7px] font-bold tracking-widest uppercase z-10 backdrop-blur-sm">
                     Silver

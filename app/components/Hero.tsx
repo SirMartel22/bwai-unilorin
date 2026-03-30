@@ -115,19 +115,10 @@ export default function Hero() {
           data-anim
           data-delay="100"
           className="font-heading text-white font-extrabold leading-none tracking-tight select-none"
-          style={{ fontSize: "clamp(4rem, 13vw, 11rem)" }}
+          style={{ fontSize: "clamp(3.5rem, 11vw, 9rem)" }}
         >
-          GDG Unilorin
+          BWAI Unilorin 2026
         </h1>
-
-        {/* Year */}
-        <p
-          data-anim
-          data-delay="280"
-          className="mt-4 text-white/70 text-2xl md:text-3xl font-light tracking-widest font-mono"
-        >
-          2026
-        </p>
 
         {/* Tagline */}
         <p
@@ -135,7 +126,7 @@ export default function Hero() {
           data-delay="400"
           className="mt-6 text-white/80 text-sm md:text-base font-medium tracking-wide"
         >
-          Build with AI
+          GDGOC Unilorin
         </p>
 
         {/* Apply CTA */}
@@ -151,16 +142,16 @@ export default function Hero() {
       </div>
 
       {/* ── Bottom info bar ─────────────────────────────────────────────── */}
-      <div className="relative z-10 flex items-end justify-between px-8 md:px-16 lg:px-20 pb-6 w-full">
+      <div className="relative z-10 flex flex-col md:flex-row items-center md:items-end justify-between gap-4 md:gap-0 px-8 md:px-16 lg:px-20 pb-6 w-full">
         {/* Date + Location */}
         <div
-          className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6"
+          className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6"
           style={{ fontFamily: "var(--font-mono), 'Space Mono', monospace" }}
         >
-          <span className="text-white/80 text-sm md:text-base tracking-wide border border-white/20 rounded px-2 py-0.5">
+          <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
             [ April 11, 2026 ]
           </span>
-          <span className="text-white/80 text-sm md:text-base tracking-wide border border-white/20 rounded px-2 py-0.5">
+          <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
             [ Fetuils Hub-Unilorin ]
           </span>
         </div>
