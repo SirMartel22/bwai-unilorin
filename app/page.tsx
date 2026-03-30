@@ -9,6 +9,8 @@ import Speakers from "./components/Speakers";
 import ShareBuild from "./components/ShareBuild";
 import Schedule from "./components/Schedule";
 import UsefulStuff from "./components/UsefulStuff";
+import FAQ from "./components/FAQ";
+import Team from "./components/Team";
 import Footer from "./components/Footer";
 
 function PageContent() {
@@ -25,6 +27,8 @@ function PageContent() {
       <ShareBuild />
       <Schedule />
       <UsefulStuff />
+      <FAQ />
+      <Team />
       <Footer />
     </div>
   );
