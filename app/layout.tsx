@@ -40,7 +40,26 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${spaceGrotesk.variable} ${inter.variable} ${spaceMono.variable} antialiased`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+             __html: `
+              (function() {
+                try {
+                  var hour = new Date().getHours();
+                  var isDark = hour < 6 || hour >= 18;
+                  if (isDark) {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className={`${spaceGrotesk.variable} ${inter.variable} ${spaceMono.variable} antialiased bg-white dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-500`}>
         {children}
       </body>
     </html>
