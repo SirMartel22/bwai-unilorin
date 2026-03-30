@@ -63,7 +63,7 @@ export default function Speakers() {
   }, []);
 
   return (
-    <section id="speakers" className="py-16 px-6 md:px-8 max-w-5xl mx-auto">
+    <section id="speakers" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
       {/* Heading */}
       <div className="anim-speakers-heading mb-8">
         <h2 className="font-heading text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1 transition-colors duration-300">
@@ -79,7 +79,7 @@ export default function Speakers() {
         <div className="splide__track">
           <ul className="splide__list">
             {speakers.map((speaker) => (
-              <li key={speaker.name} className="splide__slide">
+              <li key={speaker.name} className="splide__slide py-4">
                 <SpeakerCard speaker={speaker} />
               </li>
             ))}
