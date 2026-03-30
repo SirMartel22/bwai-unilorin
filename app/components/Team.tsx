@@ -11,7 +11,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <section id="team" className="py-24 px-6 md:px-10 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5 bg-white dark:bg-black transition-colors duration-300">
+    <section id="team" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5 bg-white dark:bg-black transition-colors duration-300">
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
         
         {/* Left Column */}

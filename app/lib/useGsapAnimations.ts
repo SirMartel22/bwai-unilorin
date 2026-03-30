@@ -14,12 +14,6 @@ const useGsapAnimations = () => {
         opacity: 0, y: 20, duration: 0.5, ease: "power2.out",
       });
 
-      // Schedule items slide in from left with stagger
-      gsap.from(".anim-schedule-item", {
-        scrollTrigger: { trigger: "#schedule", start: "top 80%" },
-        opacity: 0, x: -28, stagger: 0.055, duration: 0.38, ease: "power2.out",
-      });
-
       // Share card pop in
       gsap.from(".anim-share-card", {
         scrollTrigger: { trigger: "#share", start: "top 75%" },

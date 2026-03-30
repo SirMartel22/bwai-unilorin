@@ -2,7 +2,7 @@ import { schedule } from "../lib/data";
 
 export default function Schedule() {
   return (
-    <section id="schedule" className="py-24 px-6 md:px-10 max-w-7xl mx-auto">
+    <section id="schedule" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
       {/* Heading */}
       <div className="mb-12 flex flex-col items-center text-center">
         <h3 className="font-heading text-[#7C3AED] text-xs font-bold tracking-[0.15em] uppercase mb-4">
@@ -21,14 +21,14 @@ export default function Schedule() {
         {/* Bold fading line */}
         <div className="absolute left-[3px] md:left-[7px] top-4 bottom-4 w-1.5 bg-gradient-to-t from-transparent via-[#7C3AED] to-[#4285F4] rounded-full" />
         
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-10">
           {schedule.map((item, i) => (
             <div
               key={i}
-              className={`anim-schedule-item relative flex items-center gap-4 rounded-2xl px-6 py-5 border transition-all duration-300 hover:translate-x-1 shadow-sm ${
+              className={`relative flex items-center gap-4 rounded-2xl px-6 py-5 border transition-all duration-300 hover:translate-x-1 shadow-sm ${
                 item.highlight
-                  ? "bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-900/50"
-                  : "bg-white dark:bg-gray-800/40 border-gray-200 dark:border-gray-700/50"
+                  ? "bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-700/50"
+                  : "bg-white dark:bg-gray-900 border-gray-200 dark:border-white/10 dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)]"
               }`}
             >
               {/* Dot on the timeline */}
@@ -42,7 +42,7 @@ export default function Schedule() {
                   {item.time}
                 </span>
                 <span
-                  className={`font-body text-base md:text-lg transition-colors duration-300 ${
+                  className={`font-body text-sm md:text-base transition-colors duration-300 ${
                     item.highlight
                       ? "font-heading font-bold text-gray-900 dark:text-gray-100"
                       : "text-gray-700 dark:text-gray-300 font-medium"

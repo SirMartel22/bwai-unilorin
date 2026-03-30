@@ -35,7 +35,7 @@ const cards = [
 
 export default function WhatToExpect() {
   return (
-    <section id="expect" className="py-24 px-6 md:px-10 max-w-7xl mx-auto text-gray-900 dark:text-white">
+    <section id="expect" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto text-gray-900 dark:text-white">
       <div className="mb-10 text-center">
         <p className="text-sm md:text-base text-[#7C3AED] font-bold tracking-widest uppercase mb-2">
           GDG AI Hack?

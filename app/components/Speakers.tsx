@@ -46,6 +46,7 @@ export default function Speakers() {
         perPage: 3,
         perMove: 1,
         gap: "1.25rem",
+        padding: { top: '10px', bottom: '20px', left: '0', right: '0' },
         autoplay: true,
         interval: 3200,
         pauseOnHover: true,
@@ -63,7 +64,7 @@ export default function Speakers() {
   }, []);
 
   return (
-    <section id="speakers" className="py-24 px-6 md:px-10 max-w-7xl mx-auto">
+    <section id="speakers" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
       {/* Heading */}
       <div className="anim-speakers-heading mb-8">
         <h2 className="font-heading text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1 transition-colors duration-300">

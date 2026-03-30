@@ -25,7 +25,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="relative w-full h-[600px] overflow-hidden bg-black flex flex-col justify-between py-10 px-6 md:px-12 text-white border-t border-white/5">
+    <footer className="relative w-full h-[600px] overflow-hidden bg-black flex flex-col justify-between py-10 px-8 md:px-16 lg:px-20 text-white border-t border-white/5">
       {/* Motion Background */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-80" style={{ background: '#0a0514' }}>
         {/* Blob 1 */}
