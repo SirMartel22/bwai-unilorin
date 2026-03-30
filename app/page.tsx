@@ -2,6 +2,7 @@
 import useGsapAnimations from "./lib/useGsapAnimations";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Speakers from "./components/Speakers";
 import ShareBuild from "./components/ShareBuild";
 import Schedule from "./components/Schedule";
@@ -14,6 +15,7 @@ function PageContent() {
     <div className="min-h-screen bg-black">
       <Navbar />
       <Hero />
+      <About />
       <Speakers />
       <ShareBuild />
       <Schedule />
