@@ -17,7 +17,7 @@ export default function SpeakerCard({ speaker }: SpeakerCardProps) {
         href="#"
         className="text-[#4285F4] text-[13px] font-medium hover:underline font-body"
       >
-        View Profile ›
+        View Profiles ›
       </a>
     </div>
   );
