@@ -29,7 +29,7 @@ export default function UsefulStuff() {
         {primaryCards.map((card) => (
           <div key={card.id} className="flex flex-col flex-1 items-center">
             {/* Card Graphic */}
-            <div className="relative w-full aspect-[4/2] rounded-[2rem] bg-gradient-to-br from-[#1a122e] via-[#0d071b] to-black border border-gray-200 dark:border-white/5 flex items-center justify-center overflow-hidden mb-5 shadow-lg group cursor-pointer transition-transform hover:-translate-y-1">
+            <div className="relative w-full aspect-[4/2] rounded-[2rem] bg-gradient-to-br from-[#1a122e] via-[#0d071b] to-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] flex items-center justify-center overflow-hidden mb-5 group cursor-pointer transition-transform hover:-translate-y-1">
               <CardBg />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="text-white z-10 font-sans text-xl sm:text-2xl tracking-tight relative drop-shadow-md">
@@ -56,16 +56,16 @@ export default function UsefulStuff() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 */}
-          <div className="relative rounded-[2rem] bg-black text-white p-8 border border-white/10 shadow-lg flex flex-col items-start hover:-translate-y-1 transition-transform cursor-pointer overflow-hidden">
+          <div className="relative rounded-[2rem] bg-white dark:bg-black text-white p-8 border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] flex flex-col items-start hover:-translate-y-1 transition-transform cursor-pointer overflow-hidden">
             <CardBg />
             <div className="relative z-10 w-full">
               <span className="font-mono text-[10px] font-bold tracking-widest text-[#7C3AED] uppercase block mb-4">
                 Apr 11
               </span>
-              <h4 className="font-heading font-bold text-xl leading-snug mb-3">
+              <h4 className="font-heading font-bold text-xl leading-snug mb-3 text-black dark:text-white">
                 Build with AI Unilorin
               </h4>
-              <p className="font-body text-xs text-white/60 mb-8 max-w-[200px]">
+              <p className="font-body text-xs text-gray-500 dark:text-white/60 mb-8 max-w-[200px]">
                 In-Person • Fetuils Hub, Unilorin
               </p>
               <a href="#" className="font-body text-xs text-[#7C3AED] hover:text-[#a78bfa] font-semibold transition-colors mt-auto inline-flex items-center gap-1">
@@ -75,7 +75,7 @@ export default function UsefulStuff() {
           </div>
 
           {/* Card 2 */}
-          <div className="rounded-[2rem] bg-gray-100 dark:bg-gray-800/50 border border-gray-200 dark:border-white/5 p-8 flex flex-col items-start min-h-[220px]">
+          <div className="rounded-[2rem] bg-gray-100 dark:bg-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] p-8 flex flex-col items-start min-h-[220px]">
             <span className="font-mono text-[10px] font-bold tracking-widest text-gray-500 uppercase block mb-4">
               May 2026
             </span>
@@ -88,7 +88,7 @@ export default function UsefulStuff() {
           </div>
 
           {/* Card 3 */}
-          <div className="rounded-[2rem] bg-gray-100 dark:bg-gray-800/50 border border-gray-200 dark:border-white/5 p-8 flex flex-col items-start min-h-[220px]">
+          <div className="rounded-[2rem] bg-gray-100 dark:bg-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] p-8 flex flex-col items-start min-h-[220px]">
             <span className="font-mono text-[10px] font-bold tracking-widest text-gray-400 dark:text-gray-600 uppercase block mb-4">
               TBA
             </span>

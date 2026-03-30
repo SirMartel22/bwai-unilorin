@@ -25,10 +25,10 @@ export default function Schedule() {
           {schedule.map((item, i) => (
             <div
               key={i}
-              className={`relative flex items-center gap-4 rounded-2xl px-6 py-5 border transition-all duration-300 hover:translate-x-1 shadow-sm ${
+              className={`relative flex items-center gap-4 rounded-2xl px-6 py-5 border-[0.7px] transition-all duration-300 hover:translate-x-1 shadow-sm ${
                 item.highlight
                   ? "bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-700/50"
-                  : "bg-white dark:bg-gray-900 border-gray-200 dark:border-white/10 dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)]"
+                  : "bg-white dark:bg-gray-900 border-gray-200 dark:border-white/40 dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)]"
               }`}
             >
               {/* Dot on the timeline */}

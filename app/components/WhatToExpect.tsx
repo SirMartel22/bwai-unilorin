@@ -52,7 +52,7 @@ export default function WhatToExpect() {
         {cards.map((card) => (
           <article
             key={card.id}
-            className="group rounded-3xl bg-gradient-to-b from-gray-50 via-gray-100/50 to-gray-100 dark:from-black/50 dark:via-black/40 dark:to-black/30 border border-gray-200 dark:border-white/10 p-6 shadow-xl backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-2xl"
+            className="group rounded-3xl bg-gradient-to-b from-gray-50 via-gray-100/50 to-gray-100 dark:from-black/50 dark:via-black/40 dark:to-black/30 border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] p-6 backdrop-blur-sm transition hover:-translate-y-1"
           >
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-gray-200/50 dark:bg-black/50 px-3 py-1 text-xs font-semibold tracking-wide uppercase text-gray-800 dark:text-gray-200">
               <span className="text-[14px]">{card.icon}</span>
@@ -73,7 +73,7 @@ export default function WhatToExpect() {
           </article>
         ))}
 
-        <article className="rounded-3xl bg-gradient-to-br from-[#8B5CF6] via-[#6D28D9] to-[#3B82F6] p-6 shadow-xl">
+        <article className="rounded-3xl bg-gradient-to-br from-[#8B5CF6] via-[#6D28D9] to-[#3B82F6] border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] p-6">
           <h3 className="text-xl font-bold text-white mb-3">Want to be part of it?</h3>
           <p className="text-sm text-white/90 mb-6 leading-relaxed">
             Apply with your team, choose a challenge track, and get ready to ship the AI product you want to see in the world.
