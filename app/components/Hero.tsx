@@ -65,7 +65,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex flex-col min-h-screen bg-black overflow-hidden"
+      className="relative flex flex-col min-h-screen bg-black text-white overflow-hidden"
     >
       {/* ── Aurora background blobs ─────────────────────────────────────── */}
       <AuroraBlob
