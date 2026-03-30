@@ -8,6 +8,7 @@ import WhatToExpect from "./components/WhatToExpect";
 import Speakers from "./components/Speakers";
 import ShareBuild from "./components/ShareBuild";
 import Schedule from "./components/Schedule";
+import UsefulStuff from "./components/UsefulStuff";
 import Footer from "./components/Footer";
 
 function PageContent() {
@@ -23,6 +24,7 @@ function PageContent() {
       <Speakers />
       <ShareBuild />
       <Schedule />
+      <UsefulStuff />
       <Footer />
     </div>
   );
