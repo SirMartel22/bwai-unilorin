@@ -7,7 +7,7 @@ const faqs = [
   { question: "Is a pre-existing project required?", answer: "No, in fact we encourage building something fresh during the event to keep it fair." },
   { question: "How many spots are there?", answer: "Spots are limited, so we encourage applying as early as possible!" },
   { question: "Do I need to bring anything specific?", answer: "Your laptop, charger, valid ID, and a lot of energy. We provide power, internet, and food." },
-  { question: "Is there anything before the hackathon?", answer: "There will be some pre-event workshops to get you familiar with Google tech!" },
+  { question: "Is there anything before the event?", answer: "There will be some pre-event workshops to get you familiar with Google tech!" },
   { question: "How are the results communicated?", answer: "Judging results and awards will be announced during our closing ceremony." },
   { question: "Are meals included?", answer: "Yes, we will provide meals, snacks, and plenty of coffee throughout the event." },
   { question: "Is the event free?", answer: "Yes, it is completely free to attend for all accepted participants." },
@@ -26,7 +26,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5">
+    <section id="faq" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5">
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
         
         {/* Left Column */}
@@ -38,7 +38,7 @@ export default function FAQ() {
             FAQ
           </h2>
           <p className="font-body text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-10 max-w-sm">
-            Hackathons throw curveballs. The challenge you didn't expect, the tool that breaks at 2 AM, the pivot that changes everything. <strong className="font-semibold text-gray-900 dark:text-white">"Here's what we wish someone had told us beforehand."</strong>
+            Building something new throws curveballs. The challenge you didn't expect, the tool that breaks at 2 AM, the pivot that changes everything. <strong className="font-semibold text-gray-900 dark:text-white">"Here's what we wish someone had told us beforehand."</strong>
           </p>
 
           <a 

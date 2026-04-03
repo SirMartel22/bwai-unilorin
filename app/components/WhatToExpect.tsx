@@ -35,16 +35,16 @@ const cards = [
 
 export default function WhatToExpect() {
   return (
-    <section id="expect" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto text-gray-900 dark:text-white">
+    <section id="expect" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto text-gray-900 dark:text-white">
       <div className="mb-10 text-center">
         <p className="text-sm md:text-base text-[#7C3AED] font-bold tracking-widest uppercase mb-2">
-          GDG AI Hack?
+          Build With AI?
         </p>
         <h2 className="font-heading text-3xl md:text-5xl font-extrabold tracking-tight">
           What to Expect
         </h2>
         <p className="mt-4 text-sm md:text-base text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          A weekend of building, breaking, and shipping with real teams, real mentors, and prizes worth losing sleep over.
+          A packed day of building, breaking, and shipping with real teams, real mentors, and prizes worth losing sleep over.
         </p>
       </div>
 
@@ -79,10 +79,12 @@ export default function WhatToExpect() {
             Apply with your team, choose a challenge track, and get ready to ship the AI product you want to see in the world.
           </p>
           <a
-            href="#apply"
+            href="https://gdg.community.dev/e/mctymr/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-xl bg-white text-black font-semibold px-5 py-3 hover:bg-white/90 transition"
           >
-            → Apply
+            → Register
           </a>
         </article>
       </div>

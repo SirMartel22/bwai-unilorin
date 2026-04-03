@@ -63,7 +63,7 @@ export default function Speakers() {
   }, []);
 
   return (
-    <section id="speakers" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
+    <section id="speakers" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
       {/* Heading */}
       <div className="anim-speakers-heading mb-8">
         <h2 className="font-heading text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1 transition-colors duration-300">

@@ -31,7 +31,7 @@ function CardBg() {
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5 relative z-10">
+    <section id="sponsors" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
         
         {/* Left Column */}
@@ -45,7 +45,7 @@ export default function Sponsors() {
           </h2>
           
           <p className="font-body text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-12 max-w-sm">
-            Great hackathons don't run on enthusiasm alone. These companies showed up with real hardware, real tools, and challenges actually worth solving — not just a logo on a banner.
+            Great events don't run on enthusiasm alone. These companies showed up with real hardware, real tools, and challenges actually worth solving — not just a logo on a banner.
           </p>
 
           <a 

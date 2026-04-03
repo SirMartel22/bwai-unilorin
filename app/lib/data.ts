@@ -1,11 +1,15 @@
 import { Speaker, ScheduleItem } from "../types";
 
 export const speakers: Speaker[] = [
-  { name: "Areous", role: "AI Studio Lead", twitter: "@itsareous", icon: "🎭" },
-  { name: "Mileke Kolawole", role: "MCP Tooling Expert", twitter: "@MilekeKolawole", icon: "🔧" },
-  { name: "Ayololuwa Isaiah", role: "Browser Extension Dev", twitter: "@wonloluwa", icon: "🌐" },
-  { name: "Ahmed Olarenwaju (Ahmzzy)", role: "Antigravity Specialist", twitter: "@HenryJerry", icon: "⚡" },
-  { name: "Daniel Olowoniyi", role: "Product Showcase", twitter: "@Lanchestee", icon: "🚀" },
+  { name: "Ahmad Areous", role: "Design", twitter: "@itsareous", icon: "🎭" },
+  { name: "Agbadi Lawal", role: "Software Development + AI", twitter: "@MilekeKolawole", icon: "🔧" },
+  { name: "Kolapo Imam", role: "General AI", twitter: "@wonloluwa", icon: "🌐" },
+  { name: "Quyum Kehinde", role: "Software Development + AI", twitter: "@HenryJerry", icon: "⚡" },
+  { name: "Daniel Olowoniyi", role: "Software Development + AI", twitter: "@Lanchestee", icon: "🚀" },
+  { name: "Toyib Abubakri (Kuulbrand)", role: "Design", twitter: "@Lanchestee", icon: "🚀" },
+  { name: "Firdaous Isiaq", role: "Creative", twitter: "@Lanchestee", icon: "🚀" },
+  { name: "Henry Mgbechi", role: "Creative", twitter: "@Lanchestee", icon: "🚀" },
+  { name: "HMercy Thaddeus", role: "Creative", twitter: "@Lanchestee", icon: "🚀" },
 ];
 
 export const schedule: ScheduleItem[] = [

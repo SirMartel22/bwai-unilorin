@@ -107,7 +107,7 @@ export default function Hero() {
       {/* ── Main content ───────────────────────────────────────────────── */}
       <div
         ref={contentRef}
-        className="relative z-10 flex flex-col items-center justify-center flex-1 text-center px-8 md:px-16 lg:px-20 pt-24 pb-28"
+        className="relative z-10 flex flex-col items-center justify-center flex-1 text-center px-8 md:px-16 lg:px-20 pt-16 pb-20 md:pt-24 md:pb-28"
       >
         {/* Giant title */}
         <h1
@@ -132,11 +132,13 @@ export default function Hero() {
         {/* Apply CTA */}
         <div data-anim data-delay="540" className="mt-10">
           <a
-            href="#apply"
+            href="https://gdg.community.dev/e/mctymr/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#7C3AED] hover:bg-[#6d28d9] text-white font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] hover:-translate-y-0.5"
           >
+            <span>Register</span>
             <span>→</span>
-            <span>Apply</span>
           </a>
         </div>
       </div>
