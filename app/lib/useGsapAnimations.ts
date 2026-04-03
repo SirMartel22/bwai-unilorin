@@ -16,8 +16,12 @@ const useGsapAnimations = () => {
 
       // Share card pop in
       gsap.from(".anim-share-card", {
-        scrollTrigger: { trigger: "#share", start: "top 75%" },
-        opacity: 0, scale: 0.94, duration: 0.5, ease: "back.out(1.5)",
+        scrollTrigger: { 
+          trigger: "#share", 
+          start: "top 90%", // Trigger earlier
+          toggleActions: "play none none none" 
+        },
+        opacity: 0, scale: 0.94, duration: 0.6, ease: "back.out(1.5)",
       });
 
       // Footer fade up

@@ -2,7 +2,7 @@ import { schedule } from "../lib/data";
 
 export default function Schedule() {
   return (
-    <section id="schedule" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
+    <section id="schedule" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
       {/* Heading */}
       <div className="mb-12 flex flex-col items-center text-center">
         <h3 className="font-heading text-[#7C3AED] text-xs font-bold tracking-[0.15em] uppercase mb-4">
@@ -12,7 +12,7 @@ export default function Schedule() {
           Event Schedule
         </h2>
         <p className="font-body text-sm md:text-base text-gray-500 dark:text-gray-400 transition-colors duration-300 max-w-2xl px-4">
-          March 28th 2026 • Ilorin, Nigeria. A packed day of learning, building, and exhibiting.
+          April 11th 2026 • Ilorin, Nigeria. A packed day of learning, building, and exhibiting.
         </p>
       </div>
 

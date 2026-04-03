@@ -94,11 +94,13 @@ export default function Footer() {
         </h2>
         
         <a 
-          href="#apply" 
+          href="https://gdg.community.dev/e/mctymr/" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-3 bg-white text-black px-8 py-3.5 rounded-full font-bold hover:scale-105 active:scale-95 transition-transform"
         >
           <span>→</span>
-          Apply
+          Register
         </a>
       </div>
 
