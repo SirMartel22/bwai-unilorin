@@ -61,7 +61,7 @@ export default function Footer() {
 
         {/* Main Heading */}
         <h2 className="font-heading text-6xl md:text-8xl lg:text-[100px] font-extrabold text-white mb-10 tracking-tighter leading-[0.9]">
-          See you in April
+          See you in April 11th
         </h2>
 
         {/* Register CTA */}
