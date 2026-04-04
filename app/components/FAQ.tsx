@@ -32,17 +32,6 @@ export default function FAQ() {
           <p className="font-body text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-10 max-w-sm">
             Don't learn the hard way. Check the questions below to see how we navigate the chaos of building the future. <strong className="font-semibold text-gray-900 dark:text-white">"Here's what we wish someone had told us beforehand."</strong>
           </p>
-
-          <a
-            href="mailto:contact@gdgunilorin.dev"
-            className="flex items-center gap-3 text-gray-900 dark:text-white font-medium hover:text-[#7C3AED] dark:hover:text-[#a78bfa] transition-colors group mb-8"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#7C3AED]">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            Ask a question
-          </a>
         </div>
 
         {/* Right Column (Accordion) */}

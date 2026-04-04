@@ -45,12 +45,16 @@ export default function Footer() {
       <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center text-center">
 
         {/* Brand Label */}
-        <div className="flex flex-col items-center gap-2 mb-16">
+        <div className="flex flex-col items-center gap-2 mb-8 lg:mb-16">
           <div className="flex items-center gap-2">
-            <span className="font-heading text-lg font-extrabold bg-gradient-to-r from-white to-[#4169E1] bg-clip-text text-transparent">
-              GDGOC
-            </span>
-            <span className="font-heading font-semibold text-lg text-white">Unilorin</span>
+            {/* Logo */}
+            <a href="/" className="flex items-center gap-3 group shrink-0">
+              <img
+                src="/dark.png"
+                alt="GDG on Campus Unilorin"
+                className="h-[90px] w-[150px] object-contain"
+              />
+            </a>
           </div>
           <div className="h-px w-12 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
         </div>

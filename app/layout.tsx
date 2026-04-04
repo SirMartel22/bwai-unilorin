@@ -43,10 +43,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <head>
         <Script
-          id="theme-switcher"
+          // id="theme-switcher"
           strategy="beforeInteractive"
         >
-          {`
+          {/* {`
             (function() {
               try {
                 var hour = new Date().getHours();
@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 }
               } catch (e) {}
             })();
-          `}
+          `} */}
         </Script>
       </head>
       <body className={`${spaceGrotesk.variable} ${inter.variable} ${spaceMono.variable} antialiased bg-white dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-500`}>

@@ -3,7 +3,7 @@ import useGsapAnimations from "./lib/useGsapAnimations";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-// import Sponsors from "./components/Sponsors";
+import Sponsors from "./components/Sponsors";
 import WhatToExpect from "./components/WhatToExpect";
 import Speakers from "./components/Speakers";
 import ShareBuild from "./components/ShareBuild";
@@ -22,7 +22,7 @@ function PageContent() {
       <Hero />
       <About />
       <WhatToExpect />
-      {/* <Sponsors /> */}
+      <Sponsors />
       <Speakers />
       <ShareBuild />
       <Schedule />

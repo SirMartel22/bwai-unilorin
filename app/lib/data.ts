@@ -12,15 +12,15 @@ export function getTimeLeft() {
 }
 
 export const speakers: Speaker[] = [
-  { name: "Kolapo Imam", role: "General Track", twitter: "", twitterProfile: "", icon: "🌐" },
-  { name: "Agbadi Lawal", role: "Software Development", twitter: "", twitterProfile: "", icon: "🔧", image: "/speakers/agbadi_lawal.jpg" },
-  { name: "Daniel Olowoniyi", role: "Software Development", twitter: "@iamdanztee", twitterProfile: "https://x.com/iamdanztee", icon: "🚀", image: "/speakers/daniel-olowoniyi.jpg" },
-  { name: "Qayyum", role: "Software Development", twitter: "", twitterProfile: "", icon: "⚡" },
-  { name: "Firdaous Isiaq", role: "Creative", twitter: "", twitterProfile: "", icon: "🎨" },
-  { name: "Henry Mgbechi", role: "Creative", twitter: "", twitterProfile: "", icon: "🎬" },
-  { name: "Mercy Thaddeus", role: "Creative", twitter: "", twitterProfile: "", icon: "📸" },
-  { name: "Areous Ahmad", role: "Design", twitter: "@itsareous", twitterProfile: "https://x.com/itzareous", icon: "🎭", image: "/speakers/ahmad_areous.jpg" },
-  { name: "Toyyib Abubakri (Kuulbrand)", role: "Design", twitter: "", twitterProfile: "", icon: "🖌️", image: "/speakers/toyib_abubakri.jpg" },
+  { name: "Kolapo Imam", role: "General Track", twitter: "", twitterProfile: "", icon: "🌐", image: "/speakers/kolapo-avatar.png" },
+  { name: "Agbadi Lawal", role: "Software Development", twitter: "", twitterProfile: "https://www.linkedin.com/in/lawal-a-a322251a6/", icon: "🔧", image: "/speakers/agbadi_lawal.jpg" },
+  { name: "Daniel Olowoniyi", role: "Software Development", twitter: "", twitterProfile: "https://x.com/iamdanztee", icon: "🚀", image: "/speakers/daniel-olowoniyi.jpg" },
+  { name: "Qayyum", role: "Software Development", twitter: "", twitterProfile: "https://www.linkedin.com/in/quyumkehinde/", icon: "⚡", image: "/speakers/Quyum-Kehinde.jfif" },
+  { name: "Firdaous Isiaq", role: "Creative", twitter: "", twitterProfile: "https://www.linkedin.com/in/firdaous-isiaq-103760314/", icon: "🎨", image: "/speakers/Firdaous.jpeg" },
+  { name: "Henry Mgbechi", role: "Creative", twitter: "", twitterProfile: "https://www.linkedin.com/in/henry-mgbechi-2a38b31b2/", icon: "🎬", image: "/speakers/Henry.jfif" },
+  { name: "Mercy Thaddeus", role: "Creative", twitter: "", twitterProfile: "https://x.com/global_techgirl", icon: "📸", image: "/speakers/Mercy-Thadeus.jpg" },
+  { name: "Areous Ahmad", role: "Design", twitter: "", twitterProfile: "https://x.com/itzareous", icon: "🎭", image: "/speakers/ahmad_areous.jpg" },
+  { name: "Toyyib Abubakri (Kuulbrand)", role: "Design", twitter: "", twitterProfile: "https://www.linkedin.com/in/toyib-abubakri-kuulbrand/", icon: "🖌️", image: "/speakers/toyib_abubakri.jpg" },
 ];
 
 export const schedule: ScheduleItem[] = [
