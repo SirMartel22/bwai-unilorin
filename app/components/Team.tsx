@@ -53,12 +53,9 @@ export default function Team() {
                 />
 
                 {/* Hover Overlay - Visible by default on mobile, hover on desktop */}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 ease-out z-10 flex flex-col justify-end p-5">
-                  <span className="font-heading font-bold text-lg text-white leading-tight mb-1 transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 ease-out">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 ease-out z-10 flex flex-col justify-end p-4 h-1/2">
+                  <span className="font-heading font-extrabold text-sm text-white leading-tight transform translate-y-0 md:translate-y-2 md:group-hover:translate-y-0 transition-transform duration-300 ease-out uppercase tracking-wider">
                     {member.name}
-                  </span>
-                  <span className="font-mono text-xs text-[#a78bfa] font-semibold tracking-widest transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 delay-75 ease-out">
-                    {member.twitter}
                   </span>
                 </div>
               </div>

@@ -27,27 +27,18 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 px-8 md:px-16 lg:px-20 ${scrolled
-          ? "bg-black/60 backdrop-blur-xl border-b border-white/10 shadow-[0_1px_0_rgba(255,255,255,0.05)] h-[60px]"
-          : "bg-transparent h-[70px]"
+        ? "bg-black/60 backdrop-blur-xl border-b border-white/10 shadow-[0_1px_0_rgba(255,255,255,0.05)] h-[60px]"
+        : "bg-transparent h-[70px]"
         }`}
     >
       <div className="max-w-7xl mx-auto w-full h-full flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3 group shrink-0">
-          <img 
-            src="/GDG-logo.svg" 
-            alt="GDG on Campus Unilorin" 
-            className="h-7 w-auto"
-            style={{ filter: "brightness(0) invert(1)" }}
+          <img
+            src="/dark.png"
+            alt="GDG on Campus Unilorin"
+            className="h-[70px] w-[130px] object-contain"
           />
-          <div className="flex flex-col leading-none border-l border-white/20 pl-3">
-            <span className="text-white text-[10px] font-semibold tracking-wider uppercase">
-              on Campus
-            </span>
-            <span className="text-white/60 text-[9px] font-medium tracking-widest uppercase">
-              Unilorin
-            </span>
-          </div>
         </a>
 
         {/* Nav Links — hidden on mobile */}
