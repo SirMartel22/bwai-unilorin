@@ -2,20 +2,12 @@
 import { useState } from "react";
 
 const faqs = [
-  { question: "Can we know the challenge beforehand?", answer: "The specific challenge topics will be revealed during the opening ceremony to ensure a fair playing field for everyone." },
-  { question: "Can I participate even if I don't have a team?", answer: "Absolutely! We'll have a dedicated team-building session at the beginning of the event." },
-  { question: "Is a pre-existing project required?", answer: "No, in fact we encourage building something fresh during the event to keep it fair." },
+  { question: "Is there experience or technical skill required?", answer: "Not at all. You do not need any prior technical knowledge. We’ve designed this to take you from 'zero' to 'builder' regardless of your background." },
   { question: "How many spots are there?", answer: "Spots are limited, so we encourage applying as early as possible!" },
-  { question: "Do I need to bring anything specific?", answer: "Your laptop, charger, valid ID, and a lot of energy. We provide power, internet, and food." },
-  { question: "Is there anything before the event?", answer: "There will be some pre-event workshops to get you familiar with Google tech!" },
-  { question: "How are the results communicated?", answer: "Judging results and awards will be announced during our closing ceremony." },
-  { question: "Are meals included?", answer: "Yes, we will provide meals, snacks, and plenty of coffee throughout the event." },
+  { question: "Do I need to bring anything specific?", answer: "Your laptop, charger, valid ID, and a lot of energy. We provide power and internet" },
   { question: "Is the event free?", answer: "Yes, it is completely free to attend for all accepted participants." },
   { question: "Who can participate?", answer: "Students, professional developers, designers, and AI enthusiasts of all skill levels are welcome." },
-  { question: "What are the judging criteria?", answer: "Projects are judged on technical execution, innovation, practical usefulness, and presentation." },
   { question: "Where is the venue and how do I get there?", answer: "Fetuils Hub, Unilorin. Detailed directions will be sent to accepted participants." },
-  { question: "Is accommodation provided?", answer: "We do not provide overnight accommodations, but there will be dedicated lounge areas." },
-  { question: "Is there a Code of Conduct?", answer: "Yes, all participants must agree to our strict Code of Conduct to ensure a safe and welcoming environment for everyone." },
 ];
 
 export default function FAQ() {

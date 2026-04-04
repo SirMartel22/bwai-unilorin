@@ -1,5 +1,16 @@
 import { Speaker, ScheduleItem } from "../types";
 
+export const TARGET_DATE = new Date("2026-04-11T14:00:00");
+
+export function getTimeLeft() {
+  const diff = TARGET_DATE.getTime() - Date.now();
+  if (diff <= 0) return { d: 0, h: 0, m: 0 };
+  const d = Math.floor(diff / 86_400_000);
+  const h = Math.floor((diff % 86_400_000) / 3_600_000);
+  const m = Math.floor((diff % 3_600_000) / 60_000);
+  return { d, h, m };
+}
+
 export const speakers: Speaker[] = [
   { name: "Ahmad Areous", role: "Design", twitter: "@itsareous", icon: "🎭" },
   { name: "Agbadi Lawal", role: "Software Development + AI", twitter: "@MilekeKolawole", icon: "🔧" },

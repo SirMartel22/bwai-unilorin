@@ -69,7 +69,7 @@ export default function About() {
         {/* Right column */}
         <div className="md:col-span-9 font-body">
           <h2 className="font-heading text-4xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 dark:text-white mb-8 leading-tight tracking-tight">
-            We satisfyingly ruined it for everyone.
+            From WHAT IF? to IT'S LIVE!
           </h2>
 
           <div className="space-y-6 text-base text-gray-600 dark:text-gray-300 font-light leading-relaxed max-w-3xl">

@@ -99,8 +99,8 @@ export default function UsefulStuff() {
               <p className="font-body text-xs text-gray-500 dark:text-white/60 mb-8 max-w-[200px]">
                 In-Person • Fetuils Hub, Unilorin
               </p>
-              <a href="#" className="font-body text-xs text-[#7C3AED] hover:text-[#a78bfa] font-semibold transition-colors mt-auto inline-flex items-center gap-1">
-                View on Meetup →
+              <a href="https://gdg.community.dev/e/mctymr/" target="_blank" rel="noopener noreferrer" className="font-body text-xs text-[#7C3AED] hover:text-[#a78bfa] font-semibold transition-colors mt-auto inline-flex items-center gap-1">
+                Register →
               </a>
             </div>
           </div>

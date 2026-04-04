@@ -1,17 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-
-/* ── Countdown target: April 11, 2026 ────────────────────────────────────── */
-const TARGET = new Date("2026-04-11T00:00:00");
-
-function getTimeLeft() {
-  const diff = TARGET.getTime() - Date.now();
-  if (diff <= 0) return { d: 0, h: 0, m: 0 };
-  const d = Math.floor(diff / 86_400_000);
-  const h = Math.floor((diff % 86_400_000) / 3_600_000);
-  const m = Math.floor((diff % 3_600_000) / 60_000);
-  return { d, h, m };
-}
+import { getTimeLeft } from "../lib/data";
 
 /* ── Aurora blob (animated radial gradient element) ─────────────────────── */
 function AuroraBlob({
