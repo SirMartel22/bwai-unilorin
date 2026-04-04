@@ -26,8 +26,8 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5">
-      <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+    <section id="faq" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
         
         {/* Left Column */}
         <div className="lg:w-[35%] shrink-0 flex flex-col items-start lg:sticky lg:top-24 self-start">

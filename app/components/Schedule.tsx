@@ -2,7 +2,8 @@ import { schedule } from "../lib/data";
 
 export default function Schedule() {
   return (
-    <section id="schedule" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
+    <section id="schedule" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto">
       {/* Heading */}
       <div className="mb-12 flex flex-col items-center text-center">
         <h3 className="font-heading text-[#7C3AED] text-xs font-bold tracking-[0.15em] uppercase mb-4">
@@ -54,6 +55,7 @@ export default function Schedule() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
