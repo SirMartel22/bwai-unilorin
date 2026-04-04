@@ -3,32 +3,32 @@
 const cards = [
   {
     id: "learn",
-    brand: "BRAYNR",
-    icon: "🎓",
-    title: "Learn Different",
+    brand: "AI SOFTWARE DEV",
+    icon: "💻 ",
+    title: "Build Smarter",
     description:
-      "Every student learns differently. It’s time the system did too. Build for inclusion, creativity, and new workflows.",
-    tags: ["Product Design", "EdTech", "Learning Science", "Cross-Disciplinary"],
+      "AI development moves faster than any curriculum. It’s time to move beyond basic prompts and build for reasoning, creativity, and agentic workflows.",
+    tags: ["LLM OPS", "PROMPT ENGINEERING", "AGENTIC WORKFLOWS", "RAG ARCHITECTURE"],
     accent: "from-cyan-400 to-blue-500",
   },
   {
     id: "see",
-    brand: "LUXONIS",
-    icon: "👁️",
-    title: "See Beyond",
+    brand: "CREATIVES & CONTENT",
+    icon: "🎨",
+    title: "Create Faster",
     description:
-      "The world is three-dimensional. Your AI should be too. Use camera + spatial sensing to build real-world intelligence.",
-    tags: ["Computer Vision", "Depth Sensing", "Edge AI", "OAK Cameras"],
+      "The blank canvas is a thing of the past. Harness generative AI to amplify human creativity, automate production pipelines, and build tools that redefine how we tell stories.",
+    tags: ["GENERATIVE MEDIA AI", "CONTENT AUTOMATION", "DESIGN SYSTEMS", "MULTIMODAL OUTPUT"],
     accent: "from-purple-500 to-violet-600",
   },
   {
     id: "cord",
-    brand: "MSI",
+    brand: "AI FOR GOOD",
     icon: "🔌",
-    title: "Cut the Cord",
+    title: "Build for Impact",
     description:
-      "Every API call is a dependency. Build while disconnected and make AI that works even without cloud access.",
-    tags: ["On-Device AI", "Edge Computing", "Privacy", "Low Latency"],
+      "Cloud reliance is a bottleneck. Learn to optimize, quantize, and deploy high-performance models locally, ensuring privacy and lightning-fast responses without an internet connection",
+    tags: ["AI FOR SOCIAL GOOD", "ETHICAL AI", "PRIVACY-FIRST AI", "LOW LATENCY"],
     accent: "from-red-500 to-rose-600",
   },
 ];
@@ -37,14 +37,14 @@ export default function WhatToExpect() {
   return (
     <section id="expect" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full text-gray-900 dark:text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
-        
+
         {/* Left Column - Sticky Heading */}
         <div className="lg:w-[35%] shrink-0 flex flex-col items-start lg:sticky lg:top-24 self-start z-10">
           <p className="text-sm md:text-base text-[#7C3AED] font-bold tracking-widest uppercase mb-4">
             Build With AI?
           </p>
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-[1.1]">
-            What to<br/>Expect
+            What to<br />Expect
           </h2>
           <p className="font-body text-base text-gray-600 dark:text-gray-300 leading-relaxed max-w-[320px]">
             A packed day of building, breaking, and shipping with real teams, and real mentors worth losing sleep over.
@@ -81,7 +81,7 @@ export default function WhatToExpect() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">Ready to build?</h3>
               <p className="text-sm text-white/90 mb-8 leading-relaxed">
-                Apply with your team, choose a challenge track, and get ready to ship the AI product you want to see in the world.
+                Choose your focus area, master the latest frontier models, and get ready to ship the AI product you want to see in the world.
               </p>
             </div>
             <a
