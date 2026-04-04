@@ -12,15 +12,15 @@ export function getTimeLeft() {
 }
 
 export const speakers: Speaker[] = [
-  { name: "Kolapo Imam", role: "General Track", twitter: "@wonloluwa", icon: "🌐" },
-  { name: "Agbadi Lawal", role: "Software Development", twitter: "@MilekeKolawole", icon: "🔧" },
-  { name: "Daniel Olowoniyi", role: "Software Development", twitter: "@Lanchestee", icon: "🚀" },
-  { name: "Qayyum", role: "Software Development", twitter: "@HenryJerry", icon: "⚡" },
-  { name: "Firdaous Isiaq", role: "Creative", twitter: "@Lanchestee", icon: "🎨" },
-  { name: "Henry Mgbechi", role: "Creative", twitter: "@Lanchestee", icon: "🎬" },
-  { name: "Mercy Thaddeus", role: "Creative (Tentative)", twitter: "@Lanchestee", icon: "📸" },
-  { name: "Areous Ahmad", role: "Design", twitter: "@itsareous", icon: "🎭" },
-  { name: "Toyyib (Kuulbrand)", role: "Design", twitter: "@Lanchestee", icon: "🖌️" },
+  { name: "Kolapo Imam", role: "General Track", twitter: "", twitterProfile: "", icon: "🌐" },
+  { name: "Agbadi Lawal", role: "Software Development", twitter: "", twitterProfile: "", icon: "🔧", image: "/speakers/agbadi_lawal.jpg" },
+  { name: "Daniel Olowoniyi", role: "Software Development", twitter: "@iamdanztee", twitterProfile: "https://x.com/iamdanztee", icon: "🚀", image: "/speakers/daniel-olowoniyi.jpg" },
+  { name: "Qayyum", role: "Software Development", twitter: "", twitterProfile: "", icon: "⚡" },
+  { name: "Firdaous Isiaq", role: "Creative", twitter: "", twitterProfile: "", icon: "🎨" },
+  { name: "Henry Mgbechi", role: "Creative", twitter: "", twitterProfile: "", icon: "🎬" },
+  { name: "Mercy Thaddeus", role: "Creative", twitter: "", twitterProfile: "", icon: "📸" },
+  { name: "Areous Ahmad", role: "Design", twitter: "@itsareous", twitterProfile: "https://x.com/itzareous", icon: "🎭", image: "/speakers/ahmad_areous.jpg" },
+  { name: "Toyyib Abubakri (Kuulbrand)", role: "Design", twitter: "", twitterProfile: "", icon: "🖌️", image: "/speakers/toyib_abubakri.jpg" },
 ];
 
 export const schedule: ScheduleItem[] = [
