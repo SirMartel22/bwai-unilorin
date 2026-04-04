@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { getTimeLeft } from "../lib/data";
 
-/* ── Aurora blob (animated radial gradient element) with brand colors ───── */
+/* ── Aurora blob (animated radial gradient element) ─────────────────── */
 function AuroraBlob({
   style,
   className,
@@ -55,11 +55,11 @@ export default function Hero() {
       id="hero"
       className="relative flex flex-col min-h-screen bg-black text-white overflow-hidden"
     >
-      {/* ── Brand Aurora background blobs ───────────────────────────────── */}
+      {/* ── White & Royal Blue aurora background blobs ─────────────────── */}
       <AuroraBlob
         className="w-[700px] h-[700px] animate-[auroraA_14s_ease-in-out_infinite_alternate]"
         style={{
-          background: "radial-gradient(circle, #4285F4 0%, transparent 70%)",
+          background: "radial-gradient(circle, #4169E1 0%, transparent 70%)",
           top: "-15%",
           left: "-10%",
         }}
@@ -67,23 +67,24 @@ export default function Hero() {
       <AuroraBlob
         className="w-[600px] h-[600px] animate-[auroraB_18s_ease-in-out_infinite_alternate]"
         style={{
-          background: "radial-gradient(circle, #EA4335 0%, transparent 65%)",
+          background: "radial-gradient(circle, #ffffff 0%, transparent 60%)",
           top: "10%",
           right: "-15%",
+          opacity: 0.25
         }}
       />
       <AuroraBlob
-        className="w-[500px] h-[500px] opacity-25 animate-[auroraC_22s_ease-in-out_infinite_alternate]"
+        className="w-[500px] h-[500px] opacity-30 animate-[auroraC_22s_ease-in-out_infinite_alternate]"
         style={{
-          background: "radial-gradient(circle, #34A853 0%, transparent 75%)",
+          background: "radial-gradient(circle, #4169E1 0%, transparent 75%)",
           bottom: "5%",
           left: "30%",
         }}
       />
       <AuroraBlob
-        className="w-[600px] h-[600px] opacity-20 animate-[auroraA_20s_ease-in-out_infinite_alternate]"
+        className="w-[600px] h-[600px] opacity-15 animate-[auroraA_20s_ease-in-out_infinite_alternate]"
         style={{
-          background: "radial-gradient(circle, #FBBC04 0%, transparent 70%)",
+          background: "radial-gradient(circle, #ffffff 0%, transparent 65%)",
           bottom: "-10%",
           right: "20%",
         }}
@@ -100,18 +101,18 @@ export default function Hero() {
         }}
       />
 
-      {/* ── Main content ───────────────────────────────────────────────── */}
-      <div className="flex-1 flex flex-col px-8 md:px-16 lg:px-20 relative z-10">
+      {/* ── Main content (Preserving spacing from refined design) ───────── */}
+      <div className="flex-1 flex flex-col px-8 md:px-16 lg:px-20 relative z-10 pt-32 md:pt-24 lg:pt-28">
         <div
           ref={contentRef}
-          className="flex flex-col items-center justify-center flex-1 text-center max-w-7xl mx-auto w-full pt-16 pb-20 md:pt-24 md:pb-28"
+          className="flex flex-col items-center justify-center flex-1 text-center max-w-7xl mx-auto w-full group"
         >
-          {/* Giant title */}
+          {/* Giant title (Preserving enhanced Mobile Scale) */}
           <h1
             data-anim
             data-delay="100"
-            className="font-heading text-white font-extrabold leading-[0.9] tracking-tighter select-none mb-10"
-            style={{ fontSize: "clamp(3.5rem, 11vw, 9rem)" }}
+            className="font-heading text-white font-extrabold leading-[0.85] tracking-tighter select-none mb-10"
+            style={{ fontSize: "clamp(3.8rem, 15vw, 9rem)" }}
           >
             BWAI Unilorin 2026
           </h1>
@@ -120,57 +121,57 @@ export default function Hero() {
           <p
             data-anim
             data-delay="400"
-            className="text-white/80 text-sm md:text-lg font-bold tracking-widest"
+            className="text-white/60 text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-12"
           >
             GDGOC UNILORIN
           </p>
 
-          {/* Register CTA */}
-          <div data-anim data-delay="540" className="mt-12">
+          {/* Register CTA (Standardized Button) */}
+          <div data-anim data-delay="540">
             <a
               href="https://gdg.community.dev/e/mctymr/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#7C3AED] hover:bg-[#6d28d9] text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] hover:-translate-y-0.5"
+              className="flex items-center gap-1.5 bg-[#7C3AED] hover:bg-[#6d28d9] text-white text-[13px] font-semibold px-6 py-2.5 rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(124,58,237,0.4)] hover:-translate-y-0.5 shrink-0"
             >
-              <span>Register</span>
+              <span>Register Now</span>
               <span>→</span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* ── Bottom Info Bar (High-Impact Bold Typography) ───────────────── */}
-      <div className="relative z-10 w-full px-8 md:px-16 lg:px-20 pb-10 mt-auto border-t border-white/10 pt-10">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-8 md:gap-0 w-full">
+      {/* ── Bottom Info Bar ───────────────── */}
+      <div className="relative z-10 w-full px-8 md:px-16 lg:px-20 pb-12 mt-auto">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-10 md:gap-0 w-full border-t border-white/10 pt-10">
           {/* Info Section */}
-          <div className="flex flex-col gap-2 items-center md:items-start">
-             <span className="font-mono text-[10px] font-bold text-white/40 uppercase tracking-widest">LOCATION & VENUE</span>
-             <p className="font-heading font-black text-xl italic uppercase tracking-tight text-white drop-shadow-lg">
+          <div className="flex flex-col gap-1 items-center md:items-start text-white">
+             <span className="font-mono text-[9px] font-bold text-white/40 uppercase tracking-[0.2em] mb-1">VENUE</span>
+             <p className="font-heading font-black text-xl italic uppercase tracking-tight text-white drop-shadow-md">
                Fetuils Hub-Unilorin
              </p>
           </div>
 
           {/* Date Section */}
-          <div className="flex flex-col gap-2 items-center bg-white/5 border border-white/10 rounded-2xl px-8 py-5 backdrop-blur-md">
-             <span className="font-mono text-[10px] font-bold text-white/40 uppercase tracking-widest mb-1">SAVE THE DATE</span>
-             <p className="font-heading font-black text-3xl tracking-tighter text-brand-yellow-accent drop-shadow-md">11th April 2026</p>
+          <div className="flex flex-col gap-1 items-center bg-white/5 border border-white/10 rounded-2xl px-8 py-5 backdrop-blur-md">
+             <span className="font-mono text-[9px] font-bold text-white/40 uppercase tracking-[0.2em] mb-1">DATE</span>
+             <p className="font-heading font-black text-2xl tracking-tighter text-white drop-shadow-md">11th April 2026</p>
           </div>
 
           {/* Countdown Section */}
-          <div className="flex flex-col gap-2 items-center md:items-end sm:w-[200px]">
-             <div className="flex items-center gap-2">
-                <span className="text-white/40 font-mono text-[10px] font-bold uppercase tracking-widest">COUNTDOWN</span>
+          <div className="flex flex-col gap-1 items-center md:items-end sm:w-[200px] text-white">
+             <div className="flex items-center gap-2 mb-1">
+                <span className="text-white/40 font-mono text-[10px] font-bold uppercase tracking-[0.2em]">COUNTDOWN</span>
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-yellow-accent opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-yellow" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4169E1] opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#4169E1]" />
                 </span>
              </div>
-             <div className="font-mono font-bold text-3xl tracking-tighter flex gap-2 text-white">
+             <div className="font-mono font-bold text-2xl tracking-tighter flex gap-2 text-white">
                 <span>{time.d}D</span>
-                <span className="text-white/20">:</span>
+                <span className="text-white/10">:</span>
                 <span>{pad(time.h)}H</span>
-                <span className="text-white/20">:</span>
+                <span className="text-white/10">:</span>
                 <span>{pad(time.m)}M</span>
              </div>
           </div>
