@@ -100,7 +100,7 @@ export default function Footer() {
 
             {/* Credit Label */}
             <div className="flex items-center gap-2">
-              <p className="text-[9px] font-mono font-semibold text-white/20 tracking-[0.4em] uppercase">
+              <p className="text-[9px] font-mono font-semibold text-white/50 tracking-[0.4em] uppercase">
                 © 2026 GDGOC UNILORIN
               </p>
             </div>
