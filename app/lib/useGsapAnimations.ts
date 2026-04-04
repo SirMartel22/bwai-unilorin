@@ -18,13 +18,12 @@ const useGsapAnimations = () => {
       gsap.from(".anim-share-card", {
         scrollTrigger: { 
           trigger: "#share", 
-          start: "top 95%", // More sensitive trigger
-          toggleActions: "play none none none",
-          onEnter: () => ScrollTrigger.refresh() // Ensure layout is correct
+          start: "top 85%", // Trigger earlier (85% from top of vs screen)
+          toggleActions: "play none none none"
         },
         opacity: 0, 
         scale: 0.94, 
-        duration: 0.6, 
+        duration: 0.45, // Snappier duration
         ease: "back.out(1.5)",
         clearProps: "all" // Clear styles after animation
       });
