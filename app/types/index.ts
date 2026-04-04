@@ -5,6 +5,7 @@ export interface Speaker {
   name: string;
   role: string;
   twitter: string;
+  twitterProfile: string;
   icon: string;
   image?: string;
 }
