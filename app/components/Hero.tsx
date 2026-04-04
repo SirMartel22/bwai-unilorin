@@ -121,7 +121,7 @@ export default function Hero() {
           <p
             data-anim
             data-delay="400"
-            className="text-white/60 text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-12"
+            className="text-white/60 text-base md:text-lg font-bold tracking-[0.3em] uppercase mb-12"
           >
             GDGOC UNILORIN
           </p>
