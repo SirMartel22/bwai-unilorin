@@ -26,7 +26,7 @@ const spaceMono = Space_Mono({
   display: "swap",
 });
 
-// ── Metadata ──────────────────────────────────────────────────────────────────
+// ── Metadata for the website ──────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "BWAI Unilorin 2026 — GDGOC Unilorin",
   description:
