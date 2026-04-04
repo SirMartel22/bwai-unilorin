@@ -28,7 +28,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
-        
+
         {/* Left Column */}
         <div className="lg:w-[35%] shrink-0 flex flex-col items-start lg:sticky lg:top-24 self-start">
           <h3 className="font-heading text-[#7C3AED] text-xs font-bold tracking-[0.15em] uppercase mb-6">
@@ -38,11 +38,11 @@ export default function FAQ() {
             FAQ
           </h2>
           <p className="font-body text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-10 max-w-sm">
-            Building something new throws curveballs. The challenge you didn't expect, the tool that breaks at 2 AM, the pivot that changes everything. <strong className="font-semibold text-gray-900 dark:text-white">"Here's what we wish someone had told us beforehand."</strong>
+            Don't learn the hard way. Check the questions below to see how we navigate the chaos of building the future. <strong className="font-semibold text-gray-900 dark:text-white">"Here's what we wish someone had told us beforehand."</strong>
           </p>
 
-          <a 
-            href="mailto:contact@gdgunilorin.dev" 
+          <a
+            href="mailto:contact@gdgunilorin.dev"
             className="flex items-center gap-3 text-gray-900 dark:text-white font-medium hover:text-[#7C3AED] dark:hover:text-[#a78bfa] transition-colors group mb-8"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#7C3AED]">
@@ -58,8 +58,8 @@ export default function FAQ() {
           {faqs.map((faq, idx) => {
             const isOpen = openId === idx;
             return (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="border-b border-gray-200 dark:border-white/10 group overflow-hidden"
               >
                 <button
@@ -70,18 +70,17 @@ export default function FAQ() {
                   <span className="font-heading font-semibold text-base text-gray-900 dark:text-gray-100 group-hover:text-[#7C3AED] dark:group-hover:text-[#a78bfa] transition-colors pr-8">
                     {faq.question}
                   </span>
-                  
+
                   <span className={`shrink-0 text-[#7C3AED] transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"}`}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                   </span>
                 </button>
-                
-                <div 
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    isOpen ? "grid-rows-[1fr] opacity-100 mb-6" : "grid-rows-[0fr] opacity-0 mb-0"
-                  }`}
+
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 mb-6" : "grid-rows-[0fr] opacity-0 mb-0"
+                    }`}
                 >
                   <div className="overflow-hidden">
                     <p className="font-body text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed pr-8 md:pr-12">
@@ -93,7 +92,7 @@ export default function FAQ() {
             );
           })}
         </div>
-        
+
       </div>
     </section>
   );

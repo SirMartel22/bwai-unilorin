@@ -3,15 +3,15 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const slides = [
-  { id: 1,  src: "/about/slide0.jpg", alt: "Build With AI — opening session" },
-  { id: 2,  src: "/about/slide1.jpg", alt: "AI Build Event collaboration" },
-  { id: 3,  src: "/about/slide2.jpg", alt: "Tech presentation" },
-  { id: 4,  src: "/about/slide3.jpg", alt: "Networking event" },
-  { id: 5,  src: "/about/slide4.jpg", alt: "Team building session" },
-  { id: 6,  src: "/about/slide5.jpg", alt: "Hacking and building" },
-  { id: 7,  src: "/about/slide6.jpg", alt: "Community engagements" },
-  { id: 8,  src: "/about/slide7.jpg", alt: "Project demo showcase" },
-  { id: 9,  src: "/about/slide8.jpg", alt: "Award ceremony" },
+  { id: 1, src: "/about/slide0.jpg", alt: "Build With AI — opening session" },
+  { id: 2, src: "/about/slide1.jpg", alt: "AI Build Event collaboration" },
+  { id: 3, src: "/about/slide2.jpg", alt: "Tech presentation" },
+  { id: 4, src: "/about/slide3.jpg", alt: "Networking event" },
+  { id: 5, src: "/about/slide4.jpg", alt: "Team building session" },
+  { id: 6, src: "/about/slide5.jpg", alt: "Hacking and building" },
+  { id: 7, src: "/about/slide6.jpg", alt: "Community engagements" },
+  { id: 8, src: "/about/slide7.jpg", alt: "Project demo showcase" },
+  { id: 9, src: "/about/slide8.jpg", alt: "Award ceremony" },
   { id: 10, src: "/about/slide9.jpg", alt: "Build With AI — wrap up" },
 ];
 
@@ -74,20 +74,11 @@ export default function About() {
 
           <div className="space-y-6 text-base text-gray-600 dark:text-gray-300 font-light leading-relaxed max-w-3xl">
             <p>
-              Three years ago, no student community in Ilorin was running a real AI event — and the few in Nigeria weren't exactly setting the world on fire.
+              AI is at its best when it’s being used to solve real problems.
+              Build With AI began as an effort to bring a "builder culture" to UniIlorin—a place where students could move past the theory and get their hands dirty with code. Since then, we've seen an incredible evolution: a shift from curiosity to competence, and from solo projects to collaborative startups.
+              Today, we continue to grow, bringing in more resources and bigger challenges. But our mission hasn't changed: to foster a community where anyone with a laptop and an idea can build the future
             </p>
-            <p>
-              So we did it ourselves.
-            </p>
-            <p>
-              What started as a slightly ambitious idea turned into something nobody expected: teams that kept building long after the event, collaborations with sponsors that actually went somewhere, and a few participants who went on to launch startups — one of which just raised a couple million. No big deal.
-            </p>
-            <p>
-              Turns out, when you set the bar, everyone suddenly discovers they wanted to build too. Startups started hosting their own, other communities followed, and just like that — a full-blown <strong className="font-semibold text-gray-900 dark:text-white">Build Culture</strong>.
-            </p>
-            <p>
-              We kept raising the bar every year, and here we are again: <strong className="font-semibold text-gray-900 dark:text-white">bigger sponsors, bigger prizes, bigger challenges</strong>. But the core hasn't changed — community, connections, and most importantly, having fun.
-            </p>
+
             <p className="font-semibold text-gray-900 dark:text-white pt-2">
               That's what Build With AI is.
             </p>
