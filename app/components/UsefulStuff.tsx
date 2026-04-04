@@ -13,19 +13,26 @@ function CardBg() {
 
 export default function UsefulStuff() {
   const primaryCards = [
-    { id: "ai-studio", name: "Google AI Studio", link: "#", logo: <><span className="font-bold">Google</span> AI Studio</> },
-    { id: "antigravity", name: "Google Antigravity", link: "#", logo: <><span className="text-blue-500">A</span> <span className="font-bold">Google</span> Antigravity</> },
-    { id: "cloud", name: "Google Cloud", link: "#", logo: <><span className="text-blue-500">G</span><span className="text-red-500">o</span><span className="text-yellow-500">o</span><span className="text-blue-500">g</span><span className="text-green-500">l</span><span className="text-red-500">e</span> Cloud</> },
+    { id: "ai-studio", name: "Google AI Studio", link: "https://aistudio.google.com/", logo: <><span className="font-bold">Google</span> AI Studio</> },
+    { id: "notebooklm", name: "NotebookLM", link: "https://notebooklm.google.com/", logo: <><span className="text-blue-500">N</span>otebook<span className="font-bold text-blue-500">LM</span></> },
+    { id: "idx", name: "Project IDX", link: "https://idx.google.com/", logo: <><span className="text-blue-500">I</span><span className="text-red-500">D</span><span className="text-yellow-500">X</span> by Google</> },
+  ];
+
+  const secondaryCards = [
+    { id: "teachable", name: "Teachable Machine", link: "https://teachablemachine.withgoogle.com/", logo: <><span className="font-bold">Teachable</span> Machine</> },
+    { id: "gemini-ext", name: "Gemini Extensions", link: "https://gemini.google.com/extensions", logo: <><span className="font-bold">Gemini</span> Extensions</> },
+    { id: "cloud", name: "Google Cloud", link: "https://cloud.google.com/", logo: <><span className="text-blue-500">G</span><span className="text-red-500">o</span><span className="text-yellow-500">o</span><span className="text-blue-500">g</span><span className="text-green-500">l</span><span className="text-red-500">e</span> Cloud</> },
   ];
 
   return (
-    <section id="useful-stuff" className="py-24 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
+    <section id="useful-stuff" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full bg-white dark:bg-black transition-colors duration-300">
+      <div className="max-w-7xl mx-auto">
       <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-12 tracking-tight">
         Useful Stuff
       </h2>
 
       {/* Top 3 Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         {primaryCards.map((card) => (
           <div key={card.id} className="flex flex-col flex-1 items-center">
             {/* Card Graphic */}
@@ -41,17 +48,41 @@ export default function UsefulStuff() {
             <h4 className="font-heading font-bold text-gray-900 dark:text-gray-100 text-lg mb-1">
               {card.name}
             </h4>
-            <a href={card.link} className="font-body font-bold text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1">
+            <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-body font-bold text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1">
               <span>→</span> Link
             </a>
           </div>
         ))}
       </div>
 
-      {/* Road to Hack */}
+      {/* Secondary Tools */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        {secondaryCards.map((card) => (
+          <div key={card.id} className="flex flex-col flex-1 items-center">
+            {/* Card Graphic */}
+            <div className="relative w-full aspect-[4/2] rounded-[2rem] bg-gradient-to-br from-[#0d1117] to-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] flex items-center justify-center overflow-hidden mb-5 group cursor-pointer transition-transform hover:-translate-y-1">
+              <CardBg />
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="text-white z-10 font-sans text-lg sm:text-xl tracking-tight relative drop-shadow-md">
+                {card.logo}
+              </span>
+            </div>
+            
+            {/* Legend */}
+            <h4 className="font-heading font-bold text-gray-900 dark:text-gray-100 text-lg mb-1">
+              {card.name}
+            </h4>
+            <a href={card.link} target="_blank" rel="noopener noreferrer" className="font-body font-bold text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1">
+              <span>→</span> Link
+            </a>
+          </div>
+        ))}
+      </div>
+
+      {/* Road to Build */}
       <div>
         <h3 className="font-heading text-[#7C3AED] text-xs font-bold tracking-[0.15em] uppercase mb-6">
-          ROAD TO HACK
+          ROAD TO BUILD
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -101,6 +132,7 @@ export default function UsefulStuff() {
           </div>
 
         </div>
+      </div>
       </div>
     </section>
   );
