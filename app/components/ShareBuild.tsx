@@ -19,7 +19,7 @@ const socials = [
     bg: "bg-[#0077B5] hover:bg-[#006399]",
     text: "text-white",
     build: (text: string) =>
-      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent("https://gdg.community.dev/")}&summary=${encodeURIComponent(text)}`,
+      `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(text)}`,
   },
   {
     id: "facebook",
@@ -36,26 +36,54 @@ const socials = [
     icon: "📸",
     bg: "bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] hover:opacity-90",
     text: "text-white",
-    build: () => "https://www.instagram.com/",
+    isCopyOnly: true,
+    build: (text?: string) => "https://www.instagram.com/",
   },
 ];
 
 export default function ShareBuild() {
   const [text, setText] = useState("");
 
-  const handleShare = (buildUrl: (t: string) => string) => {
+  const handleShare = async (s: typeof socials[0]) => {
     const content = text.trim()
       ? `${text} ${hashtags.join(" ")}`
       : hashtags.join(" ");
-    window.open(buildUrl(content), "_blank", "noopener,noreferrer");
+
+    // For Instagram or if user is on mobile and platform supports it
+    if (s.isCopyOnly) {
+      try {
+        await navigator.clipboard.writeText(content);
+        alert("Text copied! Now opening Instagram...");
+      } catch (err) {
+        console.error("Failed to copy: ", err);
+      }
+      window.open(s.build(content), "_blank", "noopener,noreferrer");
+      return;
+    }
+
+    if (navigator.share && /mobile|android|iphone/i.test(navigator.userAgent)) {
+      try {
+        await navigator.share({
+          title: "Build With AI",
+          text: content,
+          url: "https://gdg.community.dev/",
+        });
+        return;
+      } catch (err) {
+        // Fallback to URL if share fails/cancelled
+      }
+    }
+
+    window.open(s.build(content), "_blank", "noopener,noreferrer");
   };
 
   return (
     <section
       id="share"
-      className="bg-[#4285F4] py-24 px-8 md:px-16 lg:px-20"
+      className="bg-[#4285F4] py-12 md:py-16 px-8 md:px-16 lg:px-20 w-full transition-colors duration-300 overflow-hidden"
     >
-      <div className="anim-share-card max-w-lg mx-auto bg-white dark:bg-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] rounded-2xl p-8 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto">
+      <div className="anim-share-card max-w-lg mx-auto bg-white dark:bg-black border-[0.7px] border-black dark:border-white/40 shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] rounded-2xl p-8 transition-colors duration-300 relative z-10">
         {/* Header */}
         <div className="flex items-center gap-3 mb-3">
           <span className="text-2xl">📣</span>
@@ -85,7 +113,7 @@ export default function ShareBuild() {
           {socials.map((s) => (
             <button
               key={s.id}
-              onClick={() => handleShare(s.build)}
+              onClick={() => handleShare(s)}
               className={`flex items-center justify-center gap-2 ${s.bg} ${s.text} font-body font-semibold text-sm py-3 px-4 rounded-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150 cursor-pointer`}
             >
               <span className="font-bold text-[15px] leading-none">{s.icon}</span>
@@ -111,6 +139,7 @@ export default function ShareBuild() {
             </button>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
