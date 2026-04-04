@@ -1,17 +1,17 @@
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "Bello Adam", role: "Lead Organizer", twitter: "@Theadambello" },
-  { name: "Alaran Khaerat", role: "Co-Lead", twitter: "@_Mo_renikeji" },
-  { name: "Usman Sharafa", role: "Technical Support Lead", twitter: "@alexj" },
-  { name: "Yusuf Ayodeji", role: "Programs Manager", twitter: "@sarahw" },
-  { name: "Sunday Odafe", role: "Design Lead", twitter: "@SundayOdafe1" },
-  { name: "AbdulQawi Laniyan", role: "Technical Dev. & Innovation Lead", twitter: "@Devdotun" },
-  { name: "Omotomike Ogunyemi", role: "Community Manager", twitter: "@O_tohme" },
-  { name: "Bello Latifat", role: "Social Media Manager", twitter: "@emilyd" },
-  { name: "Esther Adewoye", role: "Media Lead", twitter: "@emilyd" },
-  { name: "Muhammad Mahmud", role: "Technical Lead", twitter: "@cybershaykh" },
-  { name: "Omoyeni Taiwo", role: "Founder", twitter: "@Oluwarotimi_" },
+  { name: "Bello Adam", role: "Lead Organizer", twitter: "@Theadambello", image: "/leads/bello_adam_.o..webp" },
+  { name: "Alaran Khaerat", role: "Co-Lead", twitter: "@_Mo_renikeji", image: "/leads/Alaran Khaerat.webp" },
+  { name: "Usman Sharafa", role: "Technical Support Lead", twitter: "@alexj", image: "/leads/Ushman Sharafa.webp" },
+  { name: "Yusuf Ayodeji", role: "Programs Manager", twitter: "@sarahw", image: "/leads/Yusuf Ayodeji.webp" },
+  { name: "Sunday Odafe", role: "Design Lead", twitter: "@SundayOdafe1", image: "/leads/Sunday Odafe.webp" },
+  { name: "AbdulQawi Laniyan", role: "Technical Dev. & Innovation Lead", twitter: "@Devdotun", image: "/leads/abdulqawi_laniyan.webp" },
+  { name: "Omotomike Ogunyemi", role: "Community Manager", twitter: "@O_tohme", image: "/leads/omotomike_ogunyemi.webp" },
+  { name: "Bello Latifat", role: "Social Media Manager", twitter: "", image: "/leads/bello_lateefat.webp" },
+  { name: "Esther Adewoye", role: "Media Lead", twitter: "", image: "/leads/esther_adewoye.webp" },
+  { name: "Muhammad Mahmud", role: "Technical Lead", twitter: "@cybershaykh", image: "/leads/muhammad_mahmud.webp" },
+  { name: "Omoyeni Taiwo", role: "Founder", twitter: "@Oluwarotimi_", image: "/leads/omoyeni_taiwo.webp" },
 ];
 
 export default function Team() {
@@ -45,7 +45,7 @@ export default function Team() {
               >
                 {/* Image */}
                 <Image
-                  src="/speakers/headshot.png"
+                  src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover grayscale transition-transform duration-700 group-hover:scale-105"
