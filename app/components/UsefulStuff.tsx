@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 function CardBg() {
   return (
@@ -25,9 +26,9 @@ export default function UsefulStuff() {
   ];
 
   return (
-    <section id="useful-stuff" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full bg-white dark:bg-black transition-colors duration-300">
+    <section id="useful-stuff" className="py-20 px-8 md:px-16 lg:px-20 w-full bg-white dark:bg-black transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-      <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-12 tracking-tight">
+      <h2 className="font-heading text-4xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 dark:text-white mb-16 tracking-tighter">
         Useful Stuff
       </h2>
 
@@ -99,8 +100,8 @@ export default function UsefulStuff() {
               <p className="font-body text-xs text-gray-500 dark:text-white/60 mb-8 max-w-[200px]">
                 In-Person • Fetuils Hub, Unilorin
               </p>
-              <a href="#" className="font-body text-xs text-[#7C3AED] hover:text-[#a78bfa] font-semibold transition-colors mt-auto inline-flex items-center gap-1">
-                View on Meetup →
+              <a href="https://gdg.community.dev/e/mctymr/" target="_blank" rel="noopener noreferrer" className="font-body text-xs text-[#7C3AED] hover:text-[#a78bfa] font-semibold transition-colors mt-auto inline-flex items-center gap-1">
+                Register →
               </a>
             </div>
           </div>
