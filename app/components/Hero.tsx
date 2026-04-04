@@ -1,19 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { getTimeLeft } from "../lib/data";
 
-/* ── Countdown target: April 11, 2026 ────────────────────────────────────── */
-const TARGET = new Date("2026-04-11T00:00:00");
-
-function getTimeLeft() {
-  const diff = TARGET.getTime() - Date.now();
-  if (diff <= 0) return { d: 0, h: 0, m: 0 };
-  const d = Math.floor(diff / 86_400_000);
-  const h = Math.floor((diff % 86_400_000) / 3_600_000);
-  const m = Math.floor((diff % 3_600_000) / 60_000);
-  return { d, h, m };
-}
-
-/* ── Aurora blob (animated radial gradient element) ─────────────────────── */
+/* ── Aurora blob (animated radial gradient element) with brand colors ───── */
 function AuroraBlob({
   style,
   className,
@@ -31,7 +20,6 @@ function AuroraBlob({
 
 export default function Hero() {
   const [time, setTime] = useState(getTimeLeft());
-  const titleRef = useRef<HTMLHeadingElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   /* live countdown */
@@ -50,11 +38,11 @@ export default function Hero() {
       el.style.opacity = "0";
       el.style.transform = "translateY(28px)";
       timers.push(
-        setTimeout(() => {
-          el.style.transition = "opacity 0.7s ease, transform 0.7s ease";
-          el.style.opacity = "1";
-          el.style.transform = "translateY(0)";
-        }, delay)
+         setTimeout(() => {
+           el.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+           el.style.opacity = "1";
+           el.style.transform = "translateY(0)";
+         }, delay)
       );
     });
     return () => timers.forEach(clearTimeout);
@@ -67,11 +55,11 @@ export default function Hero() {
       id="hero"
       className="relative flex flex-col min-h-screen bg-black text-white overflow-hidden"
     >
-      {/* ── Aurora background blobs ─────────────────────────────────────── */}
+      {/* ── Brand Aurora background blobs ───────────────────────────────── */}
       <AuroraBlob
         className="w-[700px] h-[700px] animate-[auroraA_14s_ease-in-out_infinite_alternate]"
         style={{
-          background: "radial-gradient(circle, #7c3aed 0%, #4c1d95 50%, transparent 70%)",
+          background: "radial-gradient(circle, #4285F4 0%, transparent 70%)",
           top: "-15%",
           left: "-10%",
         }}
@@ -79,7 +67,7 @@ export default function Hero() {
       <AuroraBlob
         className="w-[600px] h-[600px] animate-[auroraB_18s_ease-in-out_infinite_alternate]"
         style={{
-          background: "radial-gradient(circle, #6d28d9 0%, #1e1b4b 55%, transparent 70%)",
+          background: "radial-gradient(circle, #EA4335 0%, transparent 65%)",
           top: "10%",
           right: "-15%",
         }}
@@ -87,9 +75,17 @@ export default function Hero() {
       <AuroraBlob
         className="w-[500px] h-[500px] opacity-25 animate-[auroraC_22s_ease-in-out_infinite_alternate]"
         style={{
-          background: "radial-gradient(circle, #a78bfa 0%, #7c3aed 60%, transparent 75%)",
+          background: "radial-gradient(circle, #34A853 0%, transparent 75%)",
           bottom: "5%",
           left: "30%",
+        }}
+      />
+      <AuroraBlob
+        className="w-[600px] h-[600px] opacity-20 animate-[auroraA_20s_ease-in-out_infinite_alternate]"
+        style={{
+          background: "radial-gradient(circle, #FBBC04 0%, transparent 70%)",
+          bottom: "-10%",
+          right: "20%",
         }}
       />
 
@@ -105,17 +101,16 @@ export default function Hero() {
       />
 
       {/* ── Main content ───────────────────────────────────────────────── */}
-      <div className="flex-1 flex flex-col px-8 md:px-16 lg:px-20">
+      <div className="flex-1 flex flex-col px-8 md:px-16 lg:px-20 relative z-10">
         <div
           ref={contentRef}
-          className="relative z-10 flex flex-col items-center justify-center flex-1 text-center max-w-7xl mx-auto w-full pt-16 pb-20 md:pt-24 md:pb-28"
+          className="flex flex-col items-center justify-center flex-1 text-center max-w-7xl mx-auto w-full pt-16 pb-20 md:pt-24 md:pb-28"
         >
           {/* Giant title */}
           <h1
-            ref={titleRef}
             data-anim
             data-delay="100"
-            className="font-heading text-white font-extrabold leading-none tracking-tight select-none"
+            className="font-heading text-white font-extrabold leading-[0.9] tracking-tighter select-none mb-10"
             style={{ fontSize: "clamp(3.5rem, 11vw, 9rem)" }}
           >
             BWAI Unilorin 2026
@@ -125,18 +120,18 @@ export default function Hero() {
           <p
             data-anim
             data-delay="400"
-            className="mt-6 text-white/80 text-sm md:text-base font-medium tracking-wide"
+            className="text-white/80 text-sm md:text-lg font-bold tracking-widest"
           >
-            GDGOC Unilorin
+            GDGOC UNILORIN
           </p>
 
-          {/* Apply CTA */}
-          <div data-anim data-delay="540" className="mt-10">
+          {/* Register CTA */}
+          <div data-anim data-delay="540" className="mt-12">
             <a
               href="https://gdg.community.dev/e/mctymr/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#7C3AED] hover:bg-[#6d28d9] text-white font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#7C3AED] hover:bg-[#6d28d9] text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] hover:-translate-y-0.5"
             >
               <span>Register</span>
               <span>→</span>
@@ -145,38 +140,44 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── Bottom info bar ─────────────────────────────────────────────── */}
-      <div className="relative z-10 w-full px-8 md:px-16 lg:px-20 pb-6 mt-auto">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-4 md:gap-0 w-full">
-          {/* Date + Location */}
-          <div
-            className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6"
-            style={{ fontFamily: "var(--font-mono), 'Space Mono', monospace" }}
-          >
-            <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
-              [ April 11, 2026 ]
-            </span>
-            <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
-              [ Fetuils Hub-Unilorin ]
-            </span>
+      {/* ── Bottom Info Bar (High-Impact Bold Typography) ───────────────── */}
+      <div className="relative z-10 w-full px-8 md:px-16 lg:px-20 pb-10 mt-auto border-t border-white/10 pt-10">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-8 md:gap-0 w-full">
+          {/* Info Section */}
+          <div className="flex flex-col gap-2 items-center md:items-start">
+             <span className="font-mono text-[10px] font-bold text-white/40 uppercase tracking-widest">LOCATION & VENUE</span>
+             <p className="font-heading font-black text-xl italic uppercase tracking-tight text-white drop-shadow-lg">
+               Fetuils Hub-Unilorin
+             </p>
           </div>
 
-          {/* Countdown pill */}
-          <div
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 text-white/80 text-[12px] md:text-[13px] px-4 py-2 rounded-full shrink-0"
-            style={{ fontFamily: "var(--font-mono), 'Space Mono', monospace" }}
-          >
-            {/* Pulsing dot */}
-            <span className="relative flex h-2 w-2 shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#a78bfa] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7c3aed]" />
-            </span>
-            {time.d}d {pad(time.h)}h {pad(time.m)}m left to apply
+          {/* Date Section */}
+          <div className="flex flex-col gap-2 items-center bg-white/5 border border-white/10 rounded-2xl px-8 py-5 backdrop-blur-md">
+             <span className="font-mono text-[10px] font-bold text-white/40 uppercase tracking-widest mb-1">SAVE THE DATE</span>
+             <p className="font-heading font-black text-3xl tracking-tighter text-brand-yellow-accent drop-shadow-md">11th April 2026</p>
+          </div>
+
+          {/* Countdown Section */}
+          <div className="flex flex-col gap-2 items-center md:items-end sm:w-[200px]">
+             <div className="flex items-center gap-2">
+                <span className="text-white/40 font-mono text-[10px] font-bold uppercase tracking-widest">COUNTDOWN</span>
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-yellow-accent opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-yellow" />
+                </span>
+             </div>
+             <div className="font-mono font-bold text-3xl tracking-tighter flex gap-2 text-white">
+                <span>{time.d}D</span>
+                <span className="text-white/20">:</span>
+                <span>{pad(time.h)}H</span>
+                <span className="text-white/20">:</span>
+                <span>{pad(time.m)}M</span>
+             </div>
           </div>
         </div>
       </div>
 
-      {/* ── Aurora keyframes injected as a style tag ────────────────────── */}
+      {/* ── Aurora keyframes ────────────────────────────────────────────── */}
       <style>{`
         @keyframes auroraA {
           0%   { transform: translate(0, 0) scale(1); }
