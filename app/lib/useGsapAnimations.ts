@@ -18,10 +18,15 @@ const useGsapAnimations = () => {
       gsap.from(".anim-share-card", {
         scrollTrigger: { 
           trigger: "#share", 
-          start: "top 90%", // Trigger earlier
-          toggleActions: "play none none none" 
+          start: "top 95%", // More sensitive trigger
+          toggleActions: "play none none none",
+          onEnter: () => ScrollTrigger.refresh() // Ensure layout is correct
         },
-        opacity: 0, scale: 0.94, duration: 0.6, ease: "back.out(1.5)",
+        opacity: 0, 
+        scale: 0.94, 
+        duration: 0.6, 
+        ease: "back.out(1.5)",
+        clearProps: "all" // Clear styles after animation
       });
 
       // Footer fade up

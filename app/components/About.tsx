@@ -56,8 +56,8 @@ export default function About() {
   const handlePrev = () => setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section id="about" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-white/5 relative z-10 bg-transparent">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
+    <section id="about" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full border-t border-gray-200 dark:border-white/5 relative z-10 bg-transparent transition-colors duration-300">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
 
         {/* Left column */}
         <div className="md:col-span-3">

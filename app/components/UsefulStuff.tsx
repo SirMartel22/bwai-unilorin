@@ -25,7 +25,8 @@ export default function UsefulStuff() {
   ];
 
   return (
-    <section id="useful-stuff" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 max-w-7xl mx-auto">
+    <section id="useful-stuff" className="py-8 md:py-12 px-8 md:px-16 lg:px-20 w-full bg-white dark:bg-black transition-colors duration-300">
+      <div className="max-w-7xl mx-auto">
       <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white mb-12 tracking-tight">
         Useful Stuff
       </h2>
@@ -131,6 +132,7 @@ export default function UsefulStuff() {
           </div>
 
         </div>
+      </div>
       </div>
     </section>
   );

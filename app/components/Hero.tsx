@@ -105,70 +105,74 @@ export default function Hero() {
       />
 
       {/* ── Main content ───────────────────────────────────────────────── */}
-      <div
-        ref={contentRef}
-        className="relative z-10 flex flex-col items-center justify-center flex-1 text-center px-8 md:px-16 lg:px-20 pt-16 pb-20 md:pt-24 md:pb-28"
-      >
-        {/* Giant title */}
-        <h1
-          ref={titleRef}
-          data-anim
-          data-delay="100"
-          className="font-heading text-white font-extrabold leading-none tracking-tight select-none"
-          style={{ fontSize: "clamp(3.5rem, 11vw, 9rem)" }}
+      <div className="flex-1 flex flex-col px-8 md:px-16 lg:px-20">
+        <div
+          ref={contentRef}
+          className="relative z-10 flex flex-col items-center justify-center flex-1 text-center max-w-7xl mx-auto w-full pt-16 pb-20 md:pt-24 md:pb-28"
         >
-          BWAI Unilorin 2026
-        </h1>
-
-        {/* Tagline */}
-        <p
-          data-anim
-          data-delay="400"
-          className="mt-6 text-white/80 text-sm md:text-base font-medium tracking-wide"
-        >
-          GDGOC Unilorin
-        </p>
-
-        {/* Apply CTA */}
-        <div data-anim data-delay="540" className="mt-10">
-          <a
-            href="https://gdg.community.dev/e/mctymr/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#7C3AED] hover:bg-[#6d28d9] text-white font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] hover:-translate-y-0.5"
+          {/* Giant title */}
+          <h1
+            ref={titleRef}
+            data-anim
+            data-delay="100"
+            className="font-heading text-white font-extrabold leading-none tracking-tight select-none"
+            style={{ fontSize: "clamp(3.5rem, 11vw, 9rem)" }}
           >
-            <span>Register</span>
-            <span>→</span>
-          </a>
+            BWAI Unilorin 2026
+          </h1>
+
+          {/* Tagline */}
+          <p
+            data-anim
+            data-delay="400"
+            className="mt-6 text-white/80 text-sm md:text-base font-medium tracking-wide"
+          >
+            GDGOC Unilorin
+          </p>
+
+          {/* Apply CTA */}
+          <div data-anim data-delay="540" className="mt-10">
+            <a
+              href="https://gdg.community.dev/e/mctymr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#7C3AED] hover:bg-[#6d28d9] text-white font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] hover:-translate-y-0.5"
+            >
+              <span>Register</span>
+              <span>→</span>
+            </a>
+          </div>
         </div>
       </div>
 
       {/* ── Bottom info bar ─────────────────────────────────────────────── */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center md:items-end justify-between gap-4 md:gap-0 px-8 md:px-16 lg:px-20 pb-6 w-full">
-        {/* Date + Location */}
-        <div
-          className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6"
-          style={{ fontFamily: "var(--font-mono), 'Space Mono', monospace" }}
-        >
-          <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
-            [ April 11, 2026 ]
-          </span>
-          <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
-            [ Fetuils Hub-Unilorin ]
-          </span>
-        </div>
+      <div className="relative z-10 w-full px-8 md:px-16 lg:px-20 pb-6 mt-auto">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between gap-4 md:gap-0 w-full">
+          {/* Date + Location */}
+          <div
+            className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6"
+            style={{ fontFamily: "var(--font-mono), 'Space Mono', monospace" }}
+          >
+            <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
+              [ April 11, 2026 ]
+            </span>
+            <span className="text-white/80 text-sm md:text-base tracking-wide px-2 py-0.5">
+              [ Fetuils Hub-Unilorin ]
+            </span>
+          </div>
 
-        {/* Countdown pill */}
-        <div
-          className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 text-white/80 text-[12px] md:text-[13px] px-4 py-2 rounded-full shrink-0"
-          style={{ fontFamily: "var(--font-mono), 'Space Mono', monospace" }}
-        >
-          {/* Pulsing dot */}
-          <span className="relative flex h-2 w-2 shrink-0">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#a78bfa] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7c3aed]" />
-          </span>
-          {time.d}d {pad(time.h)}h {pad(time.m)}m left to apply
+          {/* Countdown pill */}
+          <div
+            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 text-white/80 text-[12px] md:text-[13px] px-4 py-2 rounded-full shrink-0"
+            style={{ fontFamily: "var(--font-mono), 'Space Mono', monospace" }}
+          >
+            {/* Pulsing dot */}
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#a78bfa] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7c3aed]" />
+            </span>
+            {time.d}d {pad(time.h)}h {pad(time.m)}m left to apply
+          </div>
         </div>
       </div>
 
