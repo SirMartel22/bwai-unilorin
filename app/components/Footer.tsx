@@ -43,7 +43,7 @@ export default function Footer() {
 
       {/* Centralized Content Container */}
       <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center text-center">
-        
+
         {/* Brand Label */}
         <div className="flex flex-col items-center gap-2 mb-16">
           <div className="flex items-center gap-2">
@@ -75,17 +75,17 @@ export default function Footer() {
 
         {/* Bottom Metadata (Centered) */}
         <div className="w-full flex flex-col items-center gap-10">
-          
+
           {/* Social Icons */}
           <div className="flex items-center gap-6">
             <a href="https://www.linkedin.com/company/gdg-on-campus-university-of-ilorin/posts/" className="group transition-transform hover:scale-110">
-               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 group-hover:text-white transition-colors"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 group-hover:text-white transition-colors"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
             <a href="https://www.instagram.com/gdgoc_unilorin/" className="group transition-transform hover:scale-110">
-               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 group-hover:text-white transition-colors"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 group-hover:text-white transition-colors"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
             <a href="https://x.com/gdgoc_unilorin" className="group transition-transform hover:scale-110">
-               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" className="text-white/40 group-hover:text-white transition-colors"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" className="text-white/40 group-hover:text-white transition-colors"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
             </a>
           </div>
 
@@ -99,16 +99,13 @@ export default function Footer() {
             </div>
 
             {/* Credit Label */}
-            <div className="flex flex-col items-center gap-2">
-               <a href="#coc" className="font-mono text-[10px] font-bold tracking-[0.3em] text-white/30 hover:text-white/60 transition-colors uppercase">
-                 CODE OF CONDUCT
-               </a>
-               <p className="text-[9px] font-mono font-semibold text-white/20 tracking-[0.4em] uppercase">
-                 © 2026 GDGOC UNILORIN
-               </p>
+            <div className="flex items-center gap-2">
+              <p className="text-[9px] font-mono font-semibold text-white/20 tracking-[0.4em] uppercase">
+                © 2026 GDGOC UNILORIN
+              </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </footer>

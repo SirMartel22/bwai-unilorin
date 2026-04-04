@@ -98,4 +98,4 @@ export default function Speakers() {
       </div>
     </section>
   );
-}
+}

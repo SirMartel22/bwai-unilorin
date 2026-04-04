@@ -6,6 +6,7 @@ export interface Speaker {
   role: string;
   twitter: string;
   icon: string;
+  image?: string;
 }
 
 export interface ScheduleItem {
