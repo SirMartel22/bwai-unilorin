@@ -77,7 +77,7 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Bottom Metadata (Centered) */}
+        {/* Bottom Metadata (Centered) also */}
         <div className="w-full flex flex-col items-center gap-10">
 
           {/* Social Icons */}
