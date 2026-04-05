@@ -12,7 +12,7 @@ export function getTimeLeft() {
 }
 
 export const speakers: Speaker[] = [
-  { name: "Kolapo Imam", role: "General Track", twitter: "", twitterProfile: "", icon: "🌐", image: "/speakers/kolapo-avatar.png" },
+  // { name: "Kolapo Imam", role: "General Track", twitter: "", twitterProfile: "", icon: "🌐", image: "/speakers/kolapo-avatar.png" },
   { name: "Agbadi Lawal", role: "Software Development", twitter: "", twitterProfile: "https://www.linkedin.com/in/lawal-a-a322251a6/", icon: "🔧", image: "/speakers/agbadi_lawal.jpg" },
   { name: "Daniel Olowoniyi", role: "Software Development", twitter: "", twitterProfile: "https://x.com/iamdanztee", icon: "🚀", image: "/speakers/daniel-olowoniyi.jpg" },
   { name: "Qayyum", role: "Software Development", twitter: "", twitterProfile: "https://www.linkedin.com/in/quyumkehinde/", icon: "⚡", image: "/speakers/Quyum-Kehinde.PNG" },
