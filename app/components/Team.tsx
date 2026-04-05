@@ -8,10 +8,11 @@ const teamMembers = [
   { name: "Sunday Odafe", role: "Design Lead", twitter: "@SundayOdafe1", image: "/leads/Sunday Odafe.webp" },
   { name: "AbdulQawi Laniyan", role: "Technical Dev. & Innovation Lead", twitter: "@Devdotun", image: "/leads/abdulqawi_laniyan.webp" },
   { name: "Omotomike Ogunyemi", role: "Community Manager", twitter: "@O_tohme", image: "/leads/omotomike_ogunyemi.webp" },
-  { name: "Bello Latifat", role: "Social Media Manager", twitter: "", image: "/leads/bello_lateefat.webp" },
+  { name: "Bello Latifat", role: "Social Media Manager", twitter: "", image: "/leads/bello-latifat.jpeg" },
   { name: "Esther Adewoye", role: "Media Lead", twitter: "", image: "/leads/esther_adewoye.webp" },
   { name: "Muhammad Mahmud", role: "Technical Lead", twitter: "@cybershaykh", image: "/leads/muhammad_mahmud.webp" },
   { name: "Omoyeni Taiwo", role: "Founder", twitter: "@Oluwarotimi_", image: "/leads/omoyeni_taiwo.webp" },
+  { name: "Aminat Ogunleye", role: "Lead", twitter: "@Oluwarotimi_", image: "/leads/aminat-ogunleye.jpeg" },
 ];
 
 export default function Team() {
@@ -56,6 +57,9 @@ export default function Team() {
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 ease-out z-10 flex flex-col justify-end p-4 h-1/2">
                   <span className="font-heading font-extrabold text-sm text-white leading-tight transform translate-y-0 md:translate-y-2 md:group-hover:translate-y-0 transition-transform duration-300 ease-out uppercase tracking-wider">
                     {member.name}
+                  </span>
+                  <span className="font-body font-light text-[8px] text-blue-500 leading-tight transform translate-y-0 md:translate-y-2 md:group-hover:translate-y-0 transition-transform duration-300 ease-out uppercase tracking-wider">
+                    {member.role}
                   </span>
                 </div>
               </div>
