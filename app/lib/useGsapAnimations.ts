@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const useGsapAnimations = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    
+
     const ctx = gsap.context(() => {
       // Speakers heading
       gsap.from(".anim-speakers-heading", {
@@ -16,13 +16,14 @@ const useGsapAnimations = () => {
 
       // Share card pop in
       gsap.from(".anim-share-card", {
-        scrollTrigger: { 
-          trigger: "#share", 
-          start: "top 85%", // Trigger earlier (85% from top of vs screen)
-          toggleActions: "play none none none"
+        scrollTrigger: {
+          trigger: ".anim-share-card",
+          start: "top 95%", // Trigger earlier (85% from top of vs screen)
+          toggleActions: "play none none none",
+          once: true
         },
-        opacity: 0, 
-        scale: 0.94, 
+        opacity: 0,
+        scale: 0.94,
         duration: 0.45, // Snappier duration
         ease: "back.out(1.5)",
         clearProps: "all" // Clear styles after animation
