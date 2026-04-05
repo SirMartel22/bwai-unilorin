@@ -11,8 +11,9 @@ const teamMembers = [
   { name: "Bello Latifat", role: "Social Media Manager", twitter: "", image: "/leads/bello-latifat.jpeg" },
   { name: "Esther Adewoye", role: "Media Lead", twitter: "", image: "/leads/esther_adewoye.webp" },
   { name: "Muhammad Mahmud", role: "Technical Lead", twitter: "@cybershaykh", image: "/leads/muhammad_mahmud.webp" },
-  { name: "Omoyeni Taiwo", role: "Founder", twitter: "@Oluwarotimi_", image: "/leads/omoyeni_taiwo.webp" },
-  { name: "Aminat Ogunleye", role: "Lead", twitter: "@Oluwarotimi_", image: "/leads/aminat-ogunleye.jpeg" },
+  { name: "Omoyeni Taiwo", role: "Programs Co-Lead", twitter: "@Oluwarotimi_", image: "/leads/omoyeni_taiwo.webp" },
+  { name: "Aminat Ogunleye", role: "Technical Writing Lead", twitter: "", image: "/leads/aminat-ogunleye.jpeg" },
+  { name: "Qareebat Ibrahim", role: "Partnership Lead", twitter: "", image: "/leads/Qareebat-Ibrahim.jpeg" },
 ];
 
 export default function Team() {
